@@ -1,0 +1,9 @@
+resources
+resources/*
+envs
+envs/*
+results
+results/*
+__pycache__/
+db.sqlite3
+

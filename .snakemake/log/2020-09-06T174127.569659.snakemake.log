@@ -1,0 +1,12 @@
+Building DAG of jobs...
+AmbiguousRuleException:
+Rules trim_reads_se and trim_reads_pe are ambiguous for the file results/trimmed/BRCA_NA12892.1.fastq.gz.
+Consider starting rule output with a unique prefix, constrain your wildcards, or use the ruleorder directive.
+Wildcards:
+	trim_reads_se: sample=BRCA_NA12892
+	trim_reads_pe: sample=BRCA_NA12892
+Expected input files:
+	trim_reads_se: /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples/BRCA_NA12892_R1.fastq.gz
+	trim_reads_pe: /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples/BRCA_NA12892_R1.fastq.gz /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples/BRCA_NA12892_R2.fastq.gzExpected output files:
+	trim_reads_se: results/trimmed/BRCA_NA12892.1.fastq.gz results/trimmed/BRCA_NA12892.1.unpaired.fastq.gz
+	trim_reads_pe: results/trimmed/BRCA_NA12892.1.fastq.gz results/trimmed/BRCA_NA12892.2.fastq.gz results/trimmed/BRCA_NA12892.1.unpaired.fastq.gz results/trimmed/BRCA_NA12892.2.unpaired.fastq.gz

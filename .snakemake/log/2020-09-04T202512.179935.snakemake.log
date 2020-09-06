@@ -1,0 +1,3 @@
+WorkflowError in line 1 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/Snakefile:
+Failed to open /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/rules/common.smk.
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/Snakefile", line 1, in <module>

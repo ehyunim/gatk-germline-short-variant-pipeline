@@ -1,0 +1,2 @@
+SyntaxError in line 11 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/Snakefile:
+Unexpected keyword expand in rule definition (Snakefile, line 11)

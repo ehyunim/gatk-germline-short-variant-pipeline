@@ -1,0 +1,4 @@
+WorkflowError in line 9 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.snake:
+Schema file /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/samples.schema.yaml not found.
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/Snakefile", line 1, in <module>
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.snake", line 9, in <module>

@@ -1,0 +1,32 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	trim_reads_pe
+	2
+
+[Sun Sep  6 01:10:44 2020]
+rule trim_reads_pe:
+    input: /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples/BRCA_NA12892_R1.fastq.gz, /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples/BRCA_NA12892_R2.fastq.gz
+    output: trimmed/BRCA_NA12892.1.fastq.gz, trimmed/BRCA_NA12892.2.fastq.gz, trimmed/BRCA_NA12892.1.unpaired.fastq.gz, trimmed/BRCA_NA12892.2.unpaired.fastq.gz
+    log: logs/trimmomatic/BRCA_NA12892.log
+    jobid: 1
+    wildcards: sample=BRCA_NA12892
+
+[Sun Sep  6 01:10:44 2020]
+Error in rule trim_reads_pe:
+    jobid: 1
+    output: trimmed/BRCA_NA12892.1.fastq.gz, trimmed/BRCA_NA12892.2.fastq.gz, trimmed/BRCA_NA12892.1.unpaired.fastq.gz, trimmed/BRCA_NA12892.2.unpaired.fastq.gz
+    log: logs/trimmomatic/BRCA_NA12892.log
+
+RuleException:
+CalledProcessError in line 16 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.snake:
+Command ' set -euo pipefail;  trimmomatic PE -threads 1 -phred33         /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples/BRCA_NA12892_R1.fastq.gz /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples/BRCA_NA12892_R2.fastq.gz         trimmed/BRCA_NA12892.1.fastq.gz trimmed/BRCA_NA12892.1.unpaired.fastq.gz         trimmed/BRCA_NA12892.2.fastq.gz trimmed/BRCA_NA12892.2.unpaired.fastq.gz         ILLUMINACLIP:/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/adapters/TruSeq3-PE.fa:2:30:10         {'trimmer': ['LEADING:3', 'TRAILING:3', 'SLIDINGWINDOW:4:15', 'MINLEN:36']}         2> logs/trimmomatic/BRCA_NA12892.log ' returned non-zero exit status 1.
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.snake", line 16, in __rule_trim_reads_pe
+  File "/home/ehlim/tools/miniconda3/envs/gatk/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/.snakemake/log/2020-09-06T011043.939589.snakemake.log

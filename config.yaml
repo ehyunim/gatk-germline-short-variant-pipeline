@@ -1,0 +1,42 @@
+samples:  
+    name: BRCA_NA12892
+    path: "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples"
+ref:
+  # genome build
+  build: hg19
+  name: ucsc.hg19.fasta
+  path: "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references"
+readingtype: paired # single or paired
+filtering:
+  vqsr: false
+  cnn: false
+  hard:
+    snvs:
+      "QD < 2.0 || FS > 60.0 || MQ < 40.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0"
+    indels:
+      "QD < 2.0 || FS > 200.0 || ReadPosRankSum < -20.0"
+
+
+params:
+  gatk:
+    HaplotypeCaller: ""
+    BaseRecalibrator: ""
+    GenotypeGVCFs: ""
+    VariantRecalibrator: ""
+  picard:
+    MarkDuplicates: "REMOVE_DUPLICATES=true"
+  trimmomatic:
+    pe:
+      trimmer:
+        - "LEADING:3"
+        - "TRAILING:3"
+        - "SLIDINGWINDOW:4:15"
+        - "MINLEN:36"
+    se:
+      trimmer:
+        - "LEADING:3"
+        - "TRAILING:3"
+        - "SLIDINGWINDOW:4:15"
+        - "MINLEN:36"
+    adapter:
+        "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/adapters/TruSeq3-PE.fa"

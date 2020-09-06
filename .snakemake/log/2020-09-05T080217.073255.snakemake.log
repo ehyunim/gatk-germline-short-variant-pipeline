@@ -1,0 +1,8 @@
+ValueError in line 8 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.snake:
+Invalid file path or buffer object type: <class 'dict'>
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/Snakefile", line 1, in <module>
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.snake", line 8, in <module>
+  File "/home/ehlim/tools/miniconda3/envs/gatk/lib/python3.6/site-packages/pandas/io/parsers.py", line 755, in read_table
+  File "/home/ehlim/tools/miniconda3/envs/gatk/lib/python3.6/site-packages/pandas/io/parsers.py", line 686, in read_csv
+  File "/home/ehlim/tools/miniconda3/envs/gatk/lib/python3.6/site-packages/pandas/io/parsers.py", line 435, in _read
+  File "/home/ehlim/tools/miniconda3/envs/gatk/lib/python3.6/site-packages/pandas/io/common.py", line 243, in get_filepath_or_buffer

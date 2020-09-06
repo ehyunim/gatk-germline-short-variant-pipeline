@@ -1,0 +1,4 @@
+ModuleNotFoundError in line 4 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.snake:
+No module named 'collection'
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/Snakefile", line 1, in <module>
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.snake", line 4, in <module>

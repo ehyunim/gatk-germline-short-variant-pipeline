@@ -1,0 +1,3 @@
+KeyError in line 3 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/Snakefile:
+'file'
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/Snakefile", line 3, in <module>

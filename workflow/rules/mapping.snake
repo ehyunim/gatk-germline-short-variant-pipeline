@@ -1,0 +1,53 @@
+rule trim_reads_se:
+    input:
+        r1=sample_dir+"/"+"{sample}_R1.fastq.gz"
+    output:
+        r1_trim="results/trimmed/{sample}.fastq.gz",
+        r1_unpair="results/trimmed/{sample}.unpaired.fastq.gz"
+    params:
+        pm=config["params"]["trimmomatic"]["pe"]["trimmer"]
+    threads:8
+    log:
+        "logs/trimmomatic/{sample}.log"
+    shell:
+        "trimmomatic SE -threads {threads} -phred33 \
+        {input.r1} \
+        {output.r1_trim} \
+        ILLUMINACLIP:{adapter_seq}:2:30:10 '{params.pm}' \
+        2> {log}"
+
+
+rule trim_reads_pe:
+    input:
+        r1=sample_dir+"/"+"{sample}_R1.fastq.gz",
+        r2=sample_dir+"/"+"{sample}_R2.fastq.gz"
+    output:
+        r1_trim="results/trimmed/{sample}.1.fastq.gz",
+        r2_trim="results/trimmed/{sample}.2.fastq.gz",
+        r1_unpair="results/trimmed/{sample}.1.unpaired.fastq.gz",
+        r2_unpair="results/trimmed/{sample}.2.unpaired.fastq.gz"
+    params:
+        pm=config["params"]["trimmomatic"]["pe"]["trimmer"]
+    threads:8
+    log:
+        "logs/trimmomatic/{sample}.log"
+    shell:
+        "trimmomatic PE -threads {threads} -phred33 \
+        {input.r1} {input.r2} \
+        {output.r1_trim} {output.r1_unpair} \
+        {output.r2_trim} {output.r2_unpair} \
+        ILLUMINACLIP:{adapter_seq}:2:30:10 '{params.pm}' \
+        2> {log}"
+
+
+rule map_reads:
+    input:
+        lambda wildcards: sample[wildcards.sample]
+    output:
+        temp("results/mapped/{sample}.bam")
+    params:
+
+
+
+
+

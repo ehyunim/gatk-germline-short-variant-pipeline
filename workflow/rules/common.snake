@@ -1,0 +1,37 @@
+import pandas as pd
+import sys
+import re
+from collections import defaultdict
+from snakemake.utils import validate
+
+
+###### Config file and sample sheets #####
+configfile: "config.yaml"
+
+
+##### Wildcard constraints #####
+
+
+##### Variables #####
+ref=config["ref"]["path"]+"/"+config["ref"]["build"]+"/"+config["ref"]["name"]
+sample=config["samples"]["name"]
+sample_dir=config["samples"]["path"]
+adapter_seq=config["params"]["trimmomatic"]["adapter"]
+
+
+##### Helper functions #####
+"""Get trimmed reads based on given readingtype""" 
+def get_trimmed_reads():
+    if str(config["readingtype"]) == "paired":
+        print("double")
+        return expand('results/trimmed/{sample}.2.unpaired.fastq.gz', sample=sample)
+    else:
+        print("single!!")
+        return expand('results/trimmed/{sample}.unpaired.fastq.gz', sample=sample)
+
+def main():
+    get_trimmed_reads()
+
+
+if __name__ == "__main__" :
+    main()

@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 8 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/Snakefile:
+Missing input files for rule all:
+trimmed/sample_1.fastq.gz

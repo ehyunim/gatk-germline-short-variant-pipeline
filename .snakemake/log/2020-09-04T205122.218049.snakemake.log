@@ -1,0 +1,4 @@
+NameError in line 3 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.snake:
+name 'get_fastq' is not defined
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/Snakefile", line 12, in <module>
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.snake", line 3, in <module>
