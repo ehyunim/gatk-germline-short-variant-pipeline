@@ -1,0 +1,4 @@
+KeyError in line 8 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk:
+'pe'
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile", line 13, in <module>
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk", line 8, in <module>

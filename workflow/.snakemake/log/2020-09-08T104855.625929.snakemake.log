@@ -1,0 +1,3 @@
+SyntaxError in line 53 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk:
+invalid syntax
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile", line 14, in <module>

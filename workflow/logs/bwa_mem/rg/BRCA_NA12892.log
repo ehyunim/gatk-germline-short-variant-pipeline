@@ -1,0 +1,14 @@
+19:53:32.711 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/ehlim/tools/miniconda3/envs/gatk/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Wed Sep 09 19:53:32 KST 2020] AddOrReplaceReadGroups --INPUT results/mapped/BRCA_NA12892.bam --OUTPUT results/mapped/BRCA_NA12892_rg.bam --RGID inco --RGLB BRCA_NA12892 --RGPL illumina --RGPU illumina --RGSM BRCA_NA12892 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Sep 09, 2020 7:53:40 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+[Wed Sep 09 19:53:40 KST 2020] Executing as ehlim@liquidbio.labkm.net on Linux 4.15.0-115-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_265-b11; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.1.8.1
+INFO	2020-09-09 19:53:40	AddOrReplaceReadGroups	Created read-group ID=inco PL=illumina LB=BRCA_NA12892 SM=BRCA_NA12892
+
+INFO	2020-09-09 19:53:40	AddOrReplaceReadGroups	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2020-09-09 19:53:47	AddOrReplaceReadGroups	Processed     1,000,000 records.  Elapsed time: 00:00:06s.  Time for last 1,000,000:    6s.  Last read position: chr8:22,248,132.  Last read name: NB502049:230:HHKKGAFXY:3:11606:25004:4679
+[Wed Sep 09 19:53:54 KST 2020] picard.sam.AddOrReplaceReadGroups done. Elapsed time: 0.37 minutes.
+Runtime.totalMemory()=986185728
+Using GATK jar /home/ehlim/tools/miniconda3/envs/gatk/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/ehlim/tools/miniconda3/envs/gatk/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar AddOrReplaceReadGroups -I results/mapped/BRCA_NA12892.bam -O results/mapped/BRCA_NA12892_rg.bam -RGID inco -RGSM BRCA_NA12892 -RGLB BRCA_NA12892 -RGPU illumina -RGPL illumina

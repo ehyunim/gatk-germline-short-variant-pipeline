@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	map_reads
+	1	mark_duplicates
+	1	sort_bam
+	4
+
+[Wed Sep  9 13:54:03 2020]
+rule map_reads:
+    input: /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references/hg19/ucsc.hg19.fasta, results/trimmed/BRCA_NA12892.1.fastq.gz, results/trimmed/BRCA_NA12892.2.fastq.gz
+    output: results/mapped/BRCA_NA12892.bam
+    log: logs/bwa_mem/BRCA_NA12892.log
+    jobid: 3
+    wildcards: sample=BRCA_NA12892
+    threads: 8
+
+[Wed Sep  9 13:54:04 2020]
+Error in rule map_reads:
+    jobid: 3
+    output: results/mapped/BRCA_NA12892.bam
+    log: logs/bwa_mem/BRCA_NA12892.log
+
+RuleException:
+CalledProcessError in line 56 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk:
+Command ' set -euo pipefail;  (bwa mem -r @RG	ID:inco	SM:BRCA_NA12892	PL:illumina -t 8 /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references/hg19/ucsc.hg19.fasta results/trimmed/BRCA_NA12892.1.fastq.gz results/trimmed/BRCA_NA12892.2.fastq.gz | samtools view -Sb - > results/mapped/BRCA_NA12892.bam) 2> logs/bwa_mem/BRCA_NA12892.log ' returned non-zero exit status 1.
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk", line 56, in __rule_map_reads
+  File "/home/ehlim/tools/miniconda3/envs/gatk/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job map_reads since they might be corrupted:
+results/mapped/BRCA_NA12892.bam
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/.snakemake/log/2020-09-09T135403.229872.snakemake.log

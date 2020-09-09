@@ -1,0 +1,35 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	index_bam
+	1	recalibrate_base_qualities
+	3
+
+[Wed Sep  9 16:25:59 2020]
+rule recalibrate_base_qualities:
+    input: results/dedup/BRCA_NA12892.sortsam.bam, /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references/hg19/ucsc.hg19.fasta, /tier4/DSC/GATK/jgjeong/standardDB/vcfDB/dbsnp_138.hg19.vcf
+    output: results/recal/BRCA_NA12892.bam, results/recal/BRCA_NA12892.recal.table
+    log: logs/gatk/bqsr/BRCA_NA12892.log
+    jobid: 2
+    wildcards: sample=BRCA_NA12892
+
+[Wed Sep  9 16:31:09 2020]
+Error in rule recalibrate_base_qualities:
+    jobid: 2
+    output: results/recal/BRCA_NA12892.bam, results/recal/BRCA_NA12892.recal.table
+    log: logs/gatk/bqsr/BRCA_NA12892.log
+
+RuleException:
+CalledProcessError in line 122 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk:
+Command ' set -euo pipefail;  gatk BaseRecalibrator -I results/dedup/BRCA_NA12892.sortsam.bam -R /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references/hg19/ucsc.hg19.fasta --known-sites /tier4/DSC/GATK/jgjeong/standardDB/vcfDB/dbsnp_138.hg19.vcf  -O results/recal/BRCA_NA12892.recal.table | gatk ApplyBQSR -I results/dedup/BRCA_NA12892.sortsam.bam -R /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references/hg19/ucsc.hg19.fasta --bqsr-recal-file results/recal/BRCA_NA12892.recal.table  -O results/recal/BRCA_NA12892.bam 2> logs/gatk/bqsr/BRCA_NA12892.log ' returned non-zero exit status 2.
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk", line 122, in __rule_recalibrate_base_qualities
+  File "/home/ehlim/tools/miniconda3/envs/gatk/lib/python3.6/concurrent/futures/thread.py", line 56, in run
+Removing output files of failed job recalibrate_base_qualities since they might be corrupted:
+results/recal/BRCA_NA12892.bam, results/recal/BRCA_NA12892.recal.table
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/.snakemake/log/2020-09-09T162558.936161.snakemake.log

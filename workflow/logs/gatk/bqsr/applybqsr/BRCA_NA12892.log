@@ -1,0 +1,40 @@
+19:59:23.496 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/ehlim/tools/miniconda3/envs/gatk/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Sep 09, 2020 7:59:31 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+19:59:31.066 INFO  ApplyBQSR - ------------------------------------------------------------
+19:59:31.067 INFO  ApplyBQSR - The Genome Analysis Toolkit (GATK) v4.1.8.1
+19:59:31.067 INFO  ApplyBQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
+19:59:31.068 INFO  ApplyBQSR - Executing as ehlim@liquidbio.labkm.net on Linux v4.15.0-115-generic amd64
+19:59:31.068 INFO  ApplyBQSR - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_265-b11
+19:59:31.069 INFO  ApplyBQSR - Start Date/Time: September 9, 2020 7:59:23 PM KST
+19:59:31.069 INFO  ApplyBQSR - ------------------------------------------------------------
+19:59:31.069 INFO  ApplyBQSR - ------------------------------------------------------------
+19:59:31.070 INFO  ApplyBQSR - HTSJDK Version: 2.23.0
+19:59:31.070 INFO  ApplyBQSR - Picard Version: 2.22.8
+19:59:31.070 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+19:59:31.070 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+19:59:31.070 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+19:59:31.070 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+19:59:31.070 INFO  ApplyBQSR - Deflater: IntelDeflater
+19:59:31.070 INFO  ApplyBQSR - Inflater: IntelInflater
+19:59:31.070 INFO  ApplyBQSR - GCS max retries/reopens: 20
+19:59:31.070 INFO  ApplyBQSR - Requester pays: disabled
+19:59:31.071 INFO  ApplyBQSR - Initializing engine
+19:59:32.181 INFO  ApplyBQSR - Done initializing engine
+19:59:32.387 INFO  ProgressMeter - Starting traversal
+19:59:32.387 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+19:59:42.409 INFO  ProgressMeter -        chr5:63214444              0.2                342000        2047699.8
+19:59:52.424 INFO  ProgressMeter -       chr12:63658265              0.3                730000        2185956.0
+20:00:02.441 INFO  ProgressMeter -       chr13:32972338              0.5               1047000        2090237.6
+20:00:12.463 INFO  ProgressMeter -       chr17:41222768              0.7               1290000        1931330.5
+20:00:22.494 INFO  ProgressMeter -       chr22:17326870              0.8               1589000        1902728.2
+20:00:25.447 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter 
+
+20:00:25.447 INFO  ProgressMeter -             unmapped              0.9               1676018        1895233.3
+20:00:25.447 INFO  ProgressMeter - Traversal complete. Processed 1676018 total reads in 0.9 minutes.
+20:00:26.893 INFO  ApplyBQSR - Shutting down engine
+[September 9, 2020 8:00:26 PM KST] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 1.06 minutes.
+Runtime.totalMemory()=1006632960
+Using GATK jar /home/ehlim/tools/miniconda3/envs/gatk/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/ehlim/tools/miniconda3/envs/gatk/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar ApplyBQSR -I results/dedup/BRCA_NA12892.sortsam.bam -R /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references/hg19/ucsc.hg19.fasta --bqsr-recal-file results/recal/BRCA_NA12892.recal.table -O results/recal/BRCA_NA12892.bam

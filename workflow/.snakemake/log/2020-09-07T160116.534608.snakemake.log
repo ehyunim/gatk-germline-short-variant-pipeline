@@ -1,0 +1,4 @@
+KeyError in line 16 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.smk:
+'build'
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile", line 1, in <module>
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.smk", line 16, in <module>

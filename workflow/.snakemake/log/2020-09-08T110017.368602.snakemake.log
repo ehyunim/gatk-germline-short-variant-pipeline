@@ -1,0 +1,38 @@
+Building DAG of jobs...
+Job counts:
+	count	jobs
+	1	all
+	1	map_reads
+	1	sort_bam
+	1	trim_reads_pe
+	4
+
+[Tue Sep  8 11:00:17 2020]
+rule trim_reads_pe:
+    input: /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples/BRCA_NA12892_R1.fastq.gz, /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples/BRCA_NA12892_R2.fastq.gz
+    output: results/trimmed/BRCA_NA12892.1.fastq.gz, results/trimmed/BRCA_NA12892.2.fastq.gz, results/trimmed/BRCA_NA12892.1.unpaired.fastq.gz, results/trimmed/BRCA_NA12892.2.unpaired.fastq.gz
+    log: logs/trimmomatic/BRCA_NA12892.log
+    jobid: 3
+    wildcards: sample=BRCA_NA12892
+
+trimmomatic PE -threads 1 -phred33         /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples/BRCA_NA12892_R1.fastq.gz /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/samples/BRCA_NA12892_R2.fastq.gz         results/trimmed/BRCA_NA12892.1.fastq.gz results/trimmed/BRCA_NA12892.1.unpaired.fastq.gz         results/trimmed/BRCA_NA12892.2.fastq.gz results/trimmed/BRCA_NA12892.2.unpaired.fastq.gz         ILLUMINACLIP:/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/adapters/TruSeq3-PE.fa:2:30:10 'LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36'         2> logs/trimmomatic/BRCA_NA12892.log
+
+[Tue Sep  8 11:00:17 2020]
+rule map_reads:
+    input: /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references/hg19/ucsc.hg19.fasta, results/trimmed/BRCA_NA12892.1.fastq.gz, results/trimmed/BRCA_NA12892.2.fastq.gz
+    output: results/mapped/BRCA_NA12892.bam
+    log: logs/bwa_mem/BRCA_NA12892.log
+    jobid: 2
+    wildcards: sample=BRCA_NA12892
+
+(bwa mem -r '@RG	ID:inco	SM:BRCA_NA12892	PL:illumina' -t 1 /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references/hg19/ucsc.hg19.fasta results/trimmed/BRCA_NA12892.1.fastq.gz results/trimmed/BRCA_NA12892.2.fastq.gz | samtools view -Sb - > results/mapped/BRCA_NA12892.bam) 2> logs/bwa_mem/BRCA_NA12892.log
+
+[Tue Sep  8 11:00:17 2020]
+rule sort_bam:
+    input: results/mapped/BRCA_NA12892.bam
+    output: sorted_reads/BRCA_NA12892.bam
+    jobid: 1
+    wildcards: sample=BRCA_NA12892
+
+RuleException in line 61 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk:
+NameError: The name 'sample' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}

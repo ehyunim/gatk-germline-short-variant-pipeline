@@ -1,0 +1,4 @@
+Building DAG of jobs...
+WildcardError in line 43 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk:
+Wildcards in input files cannot be determined from output files:
+'reference'
