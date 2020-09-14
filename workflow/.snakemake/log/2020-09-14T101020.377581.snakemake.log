@@ -1,0 +1,4 @@
+TypeError in line 19 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/calling.smk:
+get_gvcf_list() missing 1 required positional argument: 'wildcards'
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile", line 21, in <module>
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/calling.smk", line 19, in <module>

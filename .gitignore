@@ -1,9 +1,10 @@
 resources
 resources/*
+*.swp
 envs
 envs/*
 results
 results/*
 __pycache__/
 db.sqlite3
-
+*.log

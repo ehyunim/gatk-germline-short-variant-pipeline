@@ -1,0 +1,1317 @@
+14:16:13.852 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/home/ehlim/tools/miniconda3/envs/gatk/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Sep 10, 2020 2:16:21 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+14:16:21.473 INFO  HaplotypeCaller - ------------------------------------------------------------
+14:16:21.473 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.1.8.1
+14:16:21.473 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+14:16:21.474 INFO  HaplotypeCaller - Executing as ehlim@liquidbio.labkm.net on Linux v4.15.0-115-generic amd64
+14:16:21.474 INFO  HaplotypeCaller - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_265-b11
+14:16:21.474 INFO  HaplotypeCaller - Start Date/Time: September 10, 2020 2:16:13 PM KST
+14:16:21.475 INFO  HaplotypeCaller - ------------------------------------------------------------
+14:16:21.475 INFO  HaplotypeCaller - ------------------------------------------------------------
+14:16:21.475 INFO  HaplotypeCaller - HTSJDK Version: 2.23.0
+14:16:21.475 INFO  HaplotypeCaller - Picard Version: 2.22.8
+14:16:21.475 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+14:16:21.476 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+14:16:21.476 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+14:16:21.476 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+14:16:21.476 INFO  HaplotypeCaller - Deflater: IntelDeflater
+14:16:21.476 INFO  HaplotypeCaller - Inflater: IntelInflater
+14:16:21.476 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+14:16:21.476 INFO  HaplotypeCaller - Requester pays: disabled
+14:16:21.476 INFO  HaplotypeCaller - Initializing engine
+WARNING: BAM index file /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/results/recal/BRCA_NA12892.bai is older than BAM /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/results/recal/BRCA_NA12892.bam
+14:16:22.379 INFO  HaplotypeCaller - Done initializing engine
+14:16:22.382 INFO  HaplotypeCallerEngine - Tool is in reference confidence mode and the annotation, the following changes will be made to any specified annotations: 'StrandBiasBySample' will be enabled. 'ChromosomeCounts', 'FisherStrand', 'StrandOddsRatio' and 'QualByDepth' annotations have been disabled
+14:16:22.432 INFO  HaplotypeCallerEngine - Standard Emitting and Calling confidence set to 0.0 for reference-model confidence output
+14:16:22.432 INFO  HaplotypeCallerEngine - All sites annotated with PLs forced to true for reference-model confidence output
+14:16:22.471 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/home/ehlim/tools/miniconda3/envs/gatk/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar!/com/intel/gkl/native/libgkl_utils.so
+14:16:22.476 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/home/ehlim/tools/miniconda3/envs/gatk/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+14:16:22.536 INFO  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+14:16:22.537 INFO  IntelPairHmm - Available threads: 32
+14:16:22.537 INFO  IntelPairHmm - Requested threads: 4
+14:16:22.537 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+14:16:22.598 INFO  ProgressMeter - Starting traversal
+14:16:22.599 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+14:16:24.167 WARN  InbreedingCoeff - InbreedingCoeff will not be calculated; at least 10 samples must have called genotypes
+14:16:29.587 WARN  DepthPerSampleHC - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:16:29.587 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:16:32.601 INFO  ProgressMeter -         chr1:2748296              0.2                  9400          56394.4
+14:16:42.601 INFO  ProgressMeter -         chr1:9544657              0.3                 32480          97430.3
+14:16:52.601 INFO  ProgressMeter -        chr1:16315215              0.5                 55520         111032.6
+14:16:54.109 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:16:54.110 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:16:54.110 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:16:54.111 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:16:54.111 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:16:54.112 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:16:54.113 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:17:02.602 INFO  ProgressMeter -        chr1:22279414              0.7                 75820         113724.3
+14:17:12.609 INFO  ProgressMeter -        chr1:28012851              0.8                 95360         114411.4
+14:17:22.610 INFO  ProgressMeter -        chr1:33074305              1.0                112590         112569.4
+14:17:27.256 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:17:32.611 INFO  ProgressMeter -        chr1:39772882              1.2                135430         116063.0
+14:17:42.611 INFO  ProgressMeter -        chr1:46951351              1.3                159920         119922.0
+14:17:52.614 INFO  ProgressMeter -        chr1:53859873              1.5                183340         122206.3
+14:18:02.615 INFO  ProgressMeter -        chr1:59883010              1.7                203780         122249.7
+14:18:08.546 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:18:09.732 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:18:12.615 INFO  ProgressMeter -        chr1:67645002              1.8                230130         125507.2
+14:18:22.615 INFO  ProgressMeter -        chr1:75753072              2.0                257550         128757.8
+14:18:32.618 INFO  ProgressMeter -        chr1:83515226              2.2                283910         131017.2
+14:18:42.619 INFO  ProgressMeter -        chr1:91536986              2.3                311100         133310.5
+14:18:52.618 INFO  ProgressMeter -        chr1:99300914              2.5                337490         134978.9
+14:19:02.619 INFO  ProgressMeter -       chr1:106810938              2.7                362990         136104.2
+14:19:08.902 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:19:12.624 INFO  ProgressMeter -       chr1:114402040              2.8                388780         137196.3
+14:19:33.585 INFO  ProgressMeter -       chr1:121486086              3.2                412830         129694.3
+14:19:43.586 INFO  ProgressMeter -       chr1:130615086              3.3                443260         132325.0
+14:19:53.586 INFO  ProgressMeter -       chr1:137749086              3.5                467040         132815.8
+14:19:59.623 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:19:59.623 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:19:59.623 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:19:59.624 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:19:59.624 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:19:59.624 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:20:03.587 INFO  ProgressMeter -       chr1:145174006              3.7                492020         133587.3
+14:20:10.840 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:20:13.591 INFO  ProgressMeter -       chr1:152737409              3.8                517680         134467.0
+14:20:19.430 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:20:23.592 INFO  ProgressMeter -       chr1:160681386              4.0                544700         135613.9
+14:20:26.046 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:20:26.213 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:20:29.627 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:20:33.594 INFO  ProgressMeter -       chr1:168003488              4.2                569580         136157.3
+14:20:35.801 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:20:38.561 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:20:43.596 INFO  ProgressMeter -       chr1:176490769              4.3                598340         137551.0
+14:20:53.599 INFO  ProgressMeter -       chr1:184468466              4.5                625430         138471.6
+14:21:03.602 INFO  ProgressMeter -       chr1:192350298              4.7                652130         139243.4
+14:21:13.606 INFO  ProgressMeter -       chr1:198927611              4.9                674440         139056.4
+14:21:23.608 INFO  ProgressMeter -       chr1:205912651              5.0                698230         139177.9
+14:21:33.625 INFO  ProgressMeter -       chr1:213192674              5.2                722920         139458.4
+14:21:39.241 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:21:43.626 INFO  ProgressMeter -       chr1:220250868              5.4                746850         139586.4
+14:21:46.032 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:21:53.632 INFO  ProgressMeter -       chr1:226582385              5.5                768420         139277.2
+14:21:57.638 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:21:58.400 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:22:03.643 INFO  ProgressMeter -       chr1:232639044              5.7                788960         138802.0
+14:22:13.644 INFO  ProgressMeter -       chr1:238817154              5.9                809960         138437.3
+14:22:23.644 INFO  ProgressMeter -       chr1:245832412              6.0                833780         138561.1
+14:22:26.091 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:22:26.091 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:22:26.092 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:22:26.092 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:22:33.648 INFO  ProgressMeter -         chr2:3381745              6.2                856870         138559.1
+14:22:43.569 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:22:43.649 INFO  ProgressMeter -         chr2:9884523              6.4                878890         138389.7
+14:22:53.649 INFO  ProgressMeter -        chr2:16306688              6.5                900690         138195.6
+14:23:00.122 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:23:00.123 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:23:03.655 INFO  ProgressMeter -        chr2:23178545              6.7                923930         138224.6
+14:23:13.657 INFO  ProgressMeter -        chr2:29477128              6.9                945410         137996.6
+14:23:17.792 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:23:17.793 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:23:23.664 INFO  ProgressMeter -        chr2:35621730              7.0                966310         137695.1
+14:23:23.977 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:23:23.977 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:23:23.978 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:23:33.666 INFO  ProgressMeter -        chr2:42813885              7.2                990750         137902.0
+14:23:43.675 INFO  ProgressMeter -        chr2:50337312              7.4               1016330         138253.3
+14:23:53.673 INFO  ProgressMeter -        chr2:56660905              7.5               1037810         138045.2
+14:23:54.229 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:03.290 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:03.420 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:03.420 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:03.677 INFO  ProgressMeter -        chr2:63750439              7.7               1061850         138178.4
+14:24:11.420 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:11.420 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:11.421 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:11.422 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:11.423 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:11.423 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:13.677 INFO  ProgressMeter -        chr2:71149165              7.9               1087000         138448.4
+14:24:23.678 INFO  ProgressMeter -        chr2:79096107              8.0               1113950         138931.4
+14:24:33.681 INFO  ProgressMeter -        chr2:85003456              8.2               1133960         138546.3
+14:24:34.463 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:38.313 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:38.313 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:38.314 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:42.154 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:42.207 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:42.207 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:42.207 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:42.208 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:42.208 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:42.208 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:42.208 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:42.209 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:43.513 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:44.883 INFO  ProgressMeter -        chr2:92307935              8.4               1158710         138412.9
+14:24:45.652 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:45.653 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:45.653 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:45.653 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:45.654 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:45.654 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:45.654 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:45.655 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:45.655 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:45.655 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:45.656 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:24:54.886 INFO  ProgressMeter -        chr2:98203901              8.5               1178560         138035.4
+14:24:59.984 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:04.888 INFO  ProgressMeter -       chr2:104634899              8.7               1200380         137898.4
+14:25:14.889 INFO  ProgressMeter -       chr2:110497989              8.9               1220280         137550.6
+14:25:24.890 INFO  ProgressMeter -       chr2:116760542              9.0               1241470         137358.6
+14:25:30.708 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:30.709 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:30.709 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:30.709 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:30.710 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:30.710 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:34.663 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:34.663 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:34.663 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:34.890 INFO  ProgressMeter -       chr2:123156772              9.2               1263160         137227.9
+14:25:44.890 INFO  ProgressMeter -       chr2:129651506              9.4               1285200         137139.2
+14:25:49.210 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:49.210 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:49.210 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:25:54.890 INFO  ProgressMeter -       chr2:135797994              9.5               1306060         136929.9
+14:26:04.894 INFO  ProgressMeter -       chr2:142688137              9.7               1329420         136984.2
+14:26:14.895 INFO  ProgressMeter -       chr2:149069548              9.9               1351030         136860.5
+14:26:24.895 INFO  ProgressMeter -       chr2:156488394             10.0               1376180         137093.4
+14:26:33.177 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:34.901 INFO  ProgressMeter -       chr2:162974841             10.2               1398230         137013.8
+14:26:42.462 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:42.462 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:42.462 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:42.463 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:42.463 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:42.463 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:42.463 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:42.464 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:44.903 INFO  ProgressMeter -       chr2:169987687             10.4               1421970         137100.7
+14:26:48.728 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:48.728 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:48.728 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:48.729 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:48.729 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:48.729 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:48.729 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:26:54.916 INFO  ProgressMeter -       chr2:175899008             10.5               1442120         136841.5
+14:26:59.119 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:27:04.916 INFO  ProgressMeter -       chr2:183309763             10.7               1467300         137063.2
+14:27:14.925 INFO  ProgressMeter -       chr2:191395521             10.9               1494720         137482.4
+14:27:24.924 INFO  ProgressMeter -       chr2:198791899             11.0               1519880         137685.9
+14:27:25.039 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:27:32.381 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:27:34.927 INFO  ProgressMeter -       chr2:205422505             11.2               1542430         137649.8
+14:27:37.086 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:27:44.927 INFO  ProgressMeter -       chr2:212034346             11.4               1564900         137608.3
+14:27:45.308 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:27:47.074 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:27:50.592 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:27:54.934 INFO  ProgressMeter -       chr2:219229528             11.5               1589340         137737.6
+14:28:02.403 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:28:04.939 INFO  ProgressMeter -       chr2:225142617             11.7               1609420         137490.7
+14:28:14.358 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:28:14.537 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:28:14.939 INFO  ProgressMeter -       chr2:232014845             11.9               1632790         137529.0
+14:28:15.928 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:28:16.009 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:28:24.301 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:28:24.941 INFO  ProgressMeter -       chr2:239590059             12.0               1658540         137763.6
+14:28:29.165 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:28:34.945 INFO  ProgressMeter -         chr3:3426293             12.2               1682420         137838.3
+14:28:35.139 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:28:44.946 INFO  ProgressMeter -         chr3:8879598             12.4               1700880         137473.2
+14:28:49.625 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:28:54.947 INFO  ProgressMeter -        chr3:15551672             12.5               1723540         137452.9
+14:29:01.157 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:01.796 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:04.950 INFO  ProgressMeter -        chr3:23000596             12.7               1748780         137635.8
+14:29:14.950 INFO  ProgressMeter -        chr3:29663547             12.9               1771340         137606.3
+14:29:24.958 INFO  ProgressMeter -        chr3:36277315             13.0               1793770         137566.3
+14:29:28.695 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:28.698 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:28.698 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:28.698 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:28.699 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:28.699 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:28.699 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:29.074 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:29.517 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:29.518 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:29.519 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:29.520 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:29.520 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:29.521 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:29.521 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:29.522 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:29.522 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:29.523 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:34.960 INFO  ProgressMeter -        chr3:43006459             13.2               1816580         137557.0
+14:29:44.967 INFO  ProgressMeter -        chr3:49557716             13.4               1838850         137506.7
+14:29:51.564 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:29:54.968 INFO  ProgressMeter -        chr3:55551518             13.5               1859270         137322.1
+14:30:04.972 INFO  ProgressMeter -        chr3:61832579             13.7               1880580         137206.5
+14:30:07.224 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:30:07.224 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:30:14.973 INFO  ProgressMeter -        chr3:69042271             13.9               1905050         137321.7
+14:30:16.595 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:30:24.974 INFO  ProgressMeter -        chr3:76409481             14.0               1930070         137473.5
+14:30:30.258 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:30:30.258 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:30:34.976 INFO  ProgressMeter -        chr3:83624302             14.2               1954500         137580.0
+14:30:44.979 INFO  ProgressMeter -        chr3:91888632             14.4               1982440         137928.1
+14:30:54.982 INFO  ProgressMeter -        chr3:99775151             14.5               2009110         138181.0
+14:31:04.984 INFO  ProgressMeter -       chr3:106174729             14.7               2030860         138093.5
+14:31:14.986 INFO  ProgressMeter -       chr3:113354742             14.9               2055190         138181.5
+14:31:24.991 INFO  ProgressMeter -       chr3:120526672             15.0               2079550         138269.2
+14:31:34.994 INFO  ProgressMeter -       chr3:127036943             15.2               2101690         138209.2
+14:31:44.995 INFO  ProgressMeter -       chr3:134558392             15.4               2127260         138374.0
+14:31:54.996 INFO  ProgressMeter -       chr3:140869165             15.5               2148720         138270.7
+14:31:55.568 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:31:55.939 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:31:55.940 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:31:55.940 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:31:55.940 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:31:55.940 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:31:55.940 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:32:05.000 INFO  ProgressMeter -       chr3:147887371             15.7               2172500         138317.1
+14:32:15.001 INFO  ProgressMeter -       chr3:154799748             15.9               2195910         138339.3
+14:32:25.007 INFO  ProgressMeter -       chr3:162186774             16.0               2220960         138462.7
+14:32:28.377 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:32:28.923 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:32:29.241 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:32:35.008 INFO  ProgressMeter -       chr3:169747027             16.2               2246590         138620.1
+14:32:37.024 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:32:42.583 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:32:42.583 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:32:45.010 INFO  ProgressMeter -       chr3:177141633             16.4               2271680         138741.1
+14:32:55.010 INFO  ProgressMeter -       chr3:185249346             16.5               2299120         139002.1
+14:33:03.125 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:33:05.011 INFO  ProgressMeter -       chr3:193396540             16.7               2326800         139272.1
+14:33:15.011 INFO  ProgressMeter -         chr4:2740080             16.9               2351900         139384.0
+14:33:16.051 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:33:16.051 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:33:25.013 INFO  ProgressMeter -         chr4:9550023             17.0               2375090         139381.3
+14:33:30.682 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:33:35.014 INFO  ProgressMeter -        chr4:17552009             17.2               2402270         139610.9
+14:33:45.016 INFO  ProgressMeter -        chr4:25570586             17.4               2429490         139838.0
+14:33:46.193 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:33:55.018 INFO  ProgressMeter -        chr4:33384056             17.5               2456010         140020.8
+14:33:55.517 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:33:55.517 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:33:55.518 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:33:55.518 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:33:56.505 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:05.021 INFO  ProgressMeter -        chr4:40512189             17.7               2480210         140069.2
+14:34:06.749 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:15.049 INFO  ProgressMeter -        chr4:47494860             17.9               2503910         140085.4
+14:34:15.304 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:15.305 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:15.305 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:15.305 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:17.586 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:18.790 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:18.790 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:18.791 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:18.873 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:18.874 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:18.874 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:25.050 INFO  ProgressMeter -        chr4:54985882             18.0               2529300         140198.5
+14:34:28.963 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:33.723 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:34:35.050 INFO  ProgressMeter -        chr4:62321623             18.2               2554230         140284.4
+14:34:45.052 INFO  ProgressMeter -        chr4:68649316             18.4               2575740         140182.3
+14:34:55.058 INFO  ProgressMeter -        chr4:76730070             18.5               2603130         140398.7
+14:35:05.062 INFO  ProgressMeter -        chr4:83646871             18.7               2626580         140400.9
+14:35:12.040 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:35:15.062 INFO  ProgressMeter -        chr4:91607985             18.9               2653630         140594.3
+14:35:18.796 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:35:19.358 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:35:19.358 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:35:25.062 INFO  ProgressMeter -        chr4:98920958             19.0               2678390         140664.0
+14:35:33.321 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:35:35.064 INFO  ProgressMeter -       chr4:106489037             19.2               2704060         140779.6
+14:35:45.067 INFO  ProgressMeter -       chr4:113595358             19.4               2728200         140814.2
+14:35:55.069 INFO  ProgressMeter -       chr4:119368753             19.5               2747760         140614.0
+14:36:05.069 INFO  ProgressMeter -       chr4:126780417             19.7               2772920         140701.4
+14:36:15.069 INFO  ProgressMeter -       chr4:134190445             19.9               2798010         140783.9
+14:36:25.071 INFO  ProgressMeter -       chr4:142233175             20.0               2825330         140976.1
+14:36:35.074 INFO  ProgressMeter -       chr4:149237548             20.2               2849110         140989.8
+14:36:45.075 INFO  ProgressMeter -       chr4:155624647             20.4               2870810         140901.4
+14:36:55.075 INFO  ProgressMeter -       chr4:162198731             20.5               2893140         140845.3
+14:36:59.811 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:37:04.340 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:37:05.076 INFO  ProgressMeter -       chr4:167862434             20.7               2912370         140640.2
+14:37:15.079 INFO  ProgressMeter -       chr4:173911605             20.9               2932870         140499.0
+14:37:18.445 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:37:23.582 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:37:25.082 INFO  ProgressMeter -       chr4:179174839             21.0               2950750         140235.6
+14:37:32.832 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:37:35.094 INFO  ProgressMeter -       chr4:185675669             21.2               2972880         140175.6
+14:37:45.094 INFO  ProgressMeter -          chr5:406595             21.4               2992960         140022.1
+14:37:52.512 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:37:52.513 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:37:52.513 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:37:55.096 INFO  ProgressMeter -         chr5:5587164             21.5               3010570         139756.0
+14:38:05.099 INFO  ProgressMeter -        chr5:11989749             21.7               3032300         139683.7
+14:38:12.928 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:15.102 INFO  ProgressMeter -        chr5:17893933             21.9               3052330         139534.9
+14:38:15.991 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:15.991 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:15.992 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:15.992 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:20.883 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:25.101 INFO  ProgressMeter -        chr5:24184751             22.0               3073680         139448.4
+14:38:35.105 INFO  ProgressMeter -        chr5:31351474             22.2               3097920         139493.0
+14:38:38.740 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:38.740 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:38.740 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:38.741 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:38.741 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:38.741 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:38:45.117 INFO  ProgressMeter -        chr5:39520636             22.4               3125690         139693.9
+14:38:55.116 INFO  ProgressMeter -        chr5:47533273             22.5               3152770         139862.3
+14:39:05.116 INFO  ProgressMeter -        chr5:55527353             22.7               3179840         140027.9
+14:39:15.119 INFO  ProgressMeter -        chr5:63778110             22.9               3207790         140229.2
+14:39:20.821 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:39:25.119 INFO  ProgressMeter -        chr5:71544899             23.0               3234050         140354.6
+14:39:27.382 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:39:35.121 INFO  ProgressMeter -        chr5:79314096             23.2               3260430         140483.1
+14:39:43.382 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:39:45.123 INFO  ProgressMeter -        chr5:87035963             23.4               3286630         140602.2
+14:39:55.123 INFO  ProgressMeter -        chr5:95556173             23.5               3315410         140829.2
+14:39:58.710 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:40:02.746 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:40:05.124 INFO  ProgressMeter -       chr5:103092602             23.7               3341020         140919.3
+14:40:10.444 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:40:10.445 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:40:15.124 INFO  ProgressMeter -       chr5:111149551             23.9               3368340         141079.8
+14:40:25.126 INFO  ProgressMeter -       chr5:118098942             24.0               3391950         141083.7
+14:40:33.982 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:40:35.126 INFO  ProgressMeter -       chr5:126076738             24.2               3419020         141230.6
+14:40:45.126 INFO  ProgressMeter -       chr5:134370221             24.4               3447120         141417.7
+14:40:55.129 INFO  ProgressMeter -       chr5:141489379             24.5               3471290         141442.0
+14:41:05.133 INFO  ProgressMeter -       chr5:148783407             24.7               3496050         141489.5
+14:41:15.134 INFO  ProgressMeter -       chr5:155823157             24.9               3519970         141503.0
+14:41:25.136 INFO  ProgressMeter -       chr5:164025199             25.0               3547810         141672.9
+14:41:35.136 INFO  ProgressMeter -       chr5:171871438             25.2               3574400         141790.9
+14:41:40.306 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:41:42.629 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:41:42.630 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:41:45.138 INFO  ProgressMeter -       chr5:179175999             25.4               3599290         141840.3
+14:41:55.142 INFO  ProgressMeter -         chr6:5853007             25.5               3625080         141924.2
+14:41:58.889 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:42:05.142 INFO  ProgressMeter -        chr6:13085061             25.7               3649650         141959.7
+14:42:13.778 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:42:15.143 INFO  ProgressMeter -        chr6:21093008             25.9               3676880         142097.6
+14:42:25.143 INFO  ProgressMeter -        chr6:28826454             26.0               3703130         142196.2
+14:42:33.271 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:42:35.013 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:42:35.145 INFO  ProgressMeter -        chr6:37333971             26.2               3731800         142385.7
+14:42:45.147 INFO  ProgressMeter -        chr6:44768157             26.4               3757110         142445.3
+14:42:49.206 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:42:49.206 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:42:49.206 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:42:49.206 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:42:55.147 INFO  ProgressMeter -        chr6:53087068             26.5               3785350         142614.9
+14:43:00.868 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:43:05.896 INFO  ProgressMeter -        chr6:58778620             26.7               3804770         142385.5
+14:43:15.898 INFO  ProgressMeter -        chr6:66864606             26.9               3832010         142515.9
+14:43:25.905 INFO  ProgressMeter -        chr6:74788088             27.1               3858960         142633.4
+14:43:35.905 INFO  ProgressMeter -        chr6:82681378             27.2               3885700         142742.4
+14:43:45.905 INFO  ProgressMeter -        chr6:90458200             27.4               3912100         142837.7
+14:43:55.907 INFO  ProgressMeter -        chr6:98471814             27.6               3939240         142958.5
+14:44:05.910 INFO  ProgressMeter -       chr6:105733160             27.7               3963860         142986.8
+14:44:11.107 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:44:15.919 INFO  ProgressMeter -       chr6:113330992             27.9               3989680         143057.4
+14:44:25.920 INFO  ProgressMeter -       chr6:121913022             28.1               4018880         143248.3
+14:44:35.923 INFO  ProgressMeter -       chr6:129977618             28.2               4046200         143370.1
+14:44:45.925 INFO  ProgressMeter -       chr6:137804555             28.4               4072760         143463.8
+14:44:55.928 INFO  ProgressMeter -       chr6:144894018             28.6               4096800         143468.1
+14:45:05.931 INFO  ProgressMeter -       chr6:151480641             28.7               4119170         143414.2
+14:45:06.013 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:45:15.187 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:45:15.933 INFO  ProgressMeter -       chr6:158724550             28.9               4143760         143437.8
+14:45:25.940 INFO  ProgressMeter -       chr6:166592388             29.1               4170440         143532.8
+14:45:35.947 INFO  ProgressMeter -         chr7:3652563             29.2               4198250         143665.1
+14:45:45.009 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:45:45.949 INFO  ProgressMeter -        chr7:10453726             29.4               4221460         143640.0
+14:45:55.951 INFO  ProgressMeter -        chr7:18672964             29.6               4249330         143772.8
+14:46:05.975 INFO  ProgressMeter -        chr7:26790796             29.7               4276900         143892.3
+14:46:06.513 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:06.514 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.030 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.030 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.030 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.030 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.031 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.031 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.031 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.031 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.031 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.032 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.032 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.032 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.032 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:07.032 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:10.530 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:13.421 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:15.977 INFO  ProgressMeter -        chr7:34993011             29.9               4304740         144021.2
+14:46:25.979 INFO  ProgressMeter -        chr7:42267383             30.1               4329430         144043.9
+14:46:35.986 INFO  ProgressMeter -        chr7:50437843             30.2               4357210         144168.1
+14:46:44.730 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:44.730 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:44.731 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:44.731 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:44.731 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:44.943 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:44.944 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:44.944 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:44.944 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:44.944 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:45.085 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:45.402 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:45.403 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:45.403 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:45.403 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:45.403 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:45.403 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:45.987 INFO  ProgressMeter -        chr7:58494189             30.4               4384610         144279.0
+14:46:48.536 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:48.537 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:49.156 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:49.156 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:49.156 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:49.156 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:49.529 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:49.529 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:49.529 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:49.529 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:49.529 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:55.989 INFO  ProgressMeter -        chr7:65291001             30.6               4407580         144243.6
+14:46:58.275 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:46:58.276 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:47:06.001 INFO  ProgressMeter -        chr7:73122379             30.7               4434330         144330.9
+14:47:14.233 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:47:16.002 INFO  ProgressMeter -        chr7:81090906             30.9               4461410         144428.7
+14:47:26.003 INFO  ProgressMeter -        chr7:89105898             31.1               4488550         144527.4
+14:47:29.417 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:47:29.417 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:47:34.263 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:47:34.449 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:47:34.449 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:47:36.008 INFO  ProgressMeter -        chr7:96969864             31.2               4515160         144607.8
+14:47:45.116 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:47:46.009 INFO  ProgressMeter -       chr7:104405615             31.4               4540570         144649.4
+14:47:50.828 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:47:56.011 INFO  ProgressMeter -       chr7:112330882             31.6               4567440         144736.8
+14:48:06.011 INFO  ProgressMeter -       chr7:120308846             31.7               4594390         144825.9
+14:48:11.428 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:48:11.429 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:48:11.429 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:48:11.429 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:48:11.430 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:48:11.430 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:48:11.430 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:48:11.430 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:48:11.431 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:48:11.431 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:48:11.431 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:48:16.011 INFO  ProgressMeter -       chr7:127818932             31.9               4619830         144866.8
+14:48:26.013 INFO  ProgressMeter -       chr7:135257781             32.1               4645140         144903.0
+14:48:36.024 INFO  ProgressMeter -       chr7:142872682             32.2               4671000         144955.2
+14:48:46.026 INFO  ProgressMeter -       chr7:151147841             32.4               4699040         145074.9
+14:48:56.026 INFO  ProgressMeter -       chr7:159009459             32.6               4725770         145153.2
+14:49:00.328 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:49:06.028 INFO  ProgressMeter -         chr8:7346553             32.7               4751200         145190.9
+14:49:16.030 INFO  ProgressMeter -        chr8:15300536             32.9               4778230         145276.8
+14:49:18.986 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:49:18.987 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:49:18.987 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:49:18.987 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:49:26.030 INFO  ProgressMeter -        chr8:22742161             33.1               4803520         145309.4
+14:49:36.031 INFO  ProgressMeter -        chr8:30782400             33.2               4830930         145405.4
+14:49:39.118 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:49:39.119 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:49:46.036 INFO  ProgressMeter -        chr8:38707651             33.4               4857790         145483.8
+14:49:56.036 INFO  ProgressMeter -        chr8:45658522             33.6               4881320         145462.3
+14:49:57.320 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:50:06.037 INFO  ProgressMeter -        chr8:53139912             33.7               4906640         145494.2
+14:50:16.039 INFO  ProgressMeter -        chr8:60858416             33.9               4932810         145550.7
+14:50:26.039 INFO  ProgressMeter -        chr8:69591169             34.1               4962400         145707.2
+14:50:29.548 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:50:36.039 INFO  ProgressMeter -        chr8:77135218             34.2               4987990         145745.4
+14:50:38.445 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:50:46.040 INFO  ProgressMeter -        chr8:85647322             34.4               5016780         145876.1
+14:50:47.057 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:50:49.126 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:50:56.041 INFO  ProgressMeter -        chr8:93658688             34.6               5043930         145958.2
+14:50:56.854 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:51:06.051 INFO  ProgressMeter -       chr8:100714093             34.7               5067900         145947.2
+14:51:10.757 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:51:16.052 INFO  ProgressMeter -       chr8:109118183             34.9               5096450         146068.2
+14:51:26.053 INFO  ProgressMeter -       chr8:117490406             35.1               5124730         146180.4
+14:51:26.419 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:51:26.419 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:51:30.396 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:51:36.054 INFO  ProgressMeter -       chr8:125634081             35.2               5152330         146272.2
+14:51:46.087 INFO  ProgressMeter -       chr8:134145123             35.4               5181250         146398.3
+14:51:56.087 INFO  ProgressMeter -       chr8:142372658             35.6               5209180         146497.6
+14:52:06.090 INFO  ProgressMeter -         chr9:3649947             35.7               5235140         146540.6
+14:52:16.093 INFO  ProgressMeter -        chr9:10996436             35.9               5260140         146556.4
+14:52:22.430 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:52:26.094 INFO  ProgressMeter -        chr9:17998953             36.1               5283990         146540.4
+14:52:36.099 INFO  ProgressMeter -        chr9:25659397             36.2               5309990         146583.6
+14:52:46.100 INFO  ProgressMeter -        chr9:33721458             36.4               5337300         146662.6
+14:52:56.114 INFO  ProgressMeter -        chr9:41694354             36.6               5364290         146731.3
+14:53:06.116 INFO  ProgressMeter -        chr9:50879114             36.7               5395050         146902.9
+14:53:16.117 INFO  ProgressMeter -        chr9:60998114             36.9               5428780         147153.4
+14:53:21.882 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:21.882 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:21.883 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:21.883 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:21.883 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:21.883 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:21.883 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:21.883 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:21.884 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:21.884 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:21.884 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:21.884 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:22.213 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:22.213 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:22.213 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:22.213 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:25.081 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:25.082 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:25.082 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:25.082 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:25.082 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:25.450 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:25.722 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:25.786 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:25.786 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:25.787 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:25.787 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:26.119 INFO  ProgressMeter -        chr9:68687198             37.1               5454630         147189.1
+14:53:27.684 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:27.684 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:27.684 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:27.684 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:27.684 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:29.880 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:33.662 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:53:36.120 INFO  ProgressMeter -        chr9:76713665             37.2               5481820         147260.4
+14:53:46.124 INFO  ProgressMeter -        chr9:83511217             37.4               5504910         147221.3
+14:53:56.125 INFO  ProgressMeter -        chr9:90731269             37.6               5529470         147221.8
+14:54:06.132 INFO  ProgressMeter -        chr9:97481891             37.7               5552400         147178.8
+14:54:16.134 INFO  ProgressMeter -       chr9:104130517             37.9               5574930         147125.9
+14:54:26.135 INFO  ProgressMeter -       chr9:110701305             38.1               5597200         147066.7
+14:54:30.841 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:54:36.139 INFO  ProgressMeter -       chr9:117549855             38.2               5620500         147034.7
+14:54:46.142 INFO  ProgressMeter -       chr9:124790760             38.4               5645040         147035.4
+14:54:46.875 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:54:53.449 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:54:56.143 INFO  ProgressMeter -       chr9:131718551             38.6               5668600         147010.8
+14:54:58.120 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:54:58.121 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:54:58.121 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:54:58.121 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:54:58.121 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:54:58.121 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:55:06.157 INFO  ProgressMeter -       chr9:138516627             38.7               5691730         146974.5
+14:55:15.316 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:55:16.053 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:55:16.157 INFO  ProgressMeter -        chr10:4191816             38.9               5715120         146946.1
+14:55:23.154 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:55:23.154 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:55:26.160 INFO  ProgressMeter -       chr10:11838981             39.1               5741140         146985.0
+14:55:33.693 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:55:34.637 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:55:36.164 INFO  ProgressMeter -       chr10:18807385             39.2               5764870         146965.3
+14:55:46.191 INFO  ProgressMeter -       chr10:26994594             39.4               5792660         147047.2
+14:55:56.192 INFO  ProgressMeter -       chr10:34051896             39.6               5816720         147035.8
+14:55:59.119 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.192 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.192 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.192 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.192 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.192 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.193 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.218 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.218 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.524 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.524 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.524 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.524 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:03.525 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:06.192 INFO  ProgressMeter -       chr10:42024827             39.7               5843650         147096.8
+14:56:06.826 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:06.933 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:06.933 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:10.963 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:17.658 INFO  ProgressMeter -       chr10:42402223             39.9               5845010         146426.7
+14:56:19.721 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:19.722 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:19.722 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:19.722 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:19.722 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:19.722 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:19.723 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:19.723 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:19.723 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:19.724 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:21.997 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:21.998 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:21.998 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:22.826 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:22.946 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:56:27.660 INFO  ProgressMeter -       chr10:45722968             40.1               5856340         146100.4
+14:56:37.662 INFO  ProgressMeter -       chr10:51599898             40.3               5876160         145987.7
+14:56:47.665 INFO  ProgressMeter -       chr10:57490195             40.4               5896110         145879.2
+14:56:57.668 INFO  ProgressMeter -       chr10:62834601             40.6               5914230         145726.4
+14:57:07.114 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:57:07.670 INFO  ProgressMeter -       chr10:70731209             40.8               5941080         145789.1
+14:57:17.671 INFO  ProgressMeter -       chr10:77867114             40.9               5965400         145789.6
+14:57:23.008 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:57:23.009 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:57:27.673 INFO  ProgressMeter -       chr10:85429813             41.1               5991010         145821.4
+14:57:37.673 INFO  ProgressMeter -       chr10:93158181             41.3               6017240         145868.1
+14:57:47.679 INFO  ProgressMeter -       chr10:99693131             41.4               6039490         145818.0
+14:57:52.958 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:57:57.680 INFO  ProgressMeter -      chr10:108043541             41.6               6067940         145917.7
+14:58:07.682 INFO  ProgressMeter -      chr10:115074193             41.8               6091760         145905.6
+14:58:11.490 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:13.027 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:16.976 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:17.683 INFO  ProgressMeter -      chr10:121658585             41.9               6114150         145859.5
+14:58:17.750 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:26.673 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:27.685 INFO  ProgressMeter -      chr10:127259497             42.1               6133190         145734.2
+14:58:37.686 INFO  ProgressMeter -      chr10:134176706             42.3               6156620         145713.8
+14:58:41.150 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:41.150 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:41.150 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:41.151 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:41.151 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:41.151 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:41.151 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:41.152 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:41.152 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:47.690 INFO  ProgressMeter -        chr11:5810471             42.4               6180980         145715.3
+14:58:52.273 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:52.930 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:58:57.693 INFO  ProgressMeter -       chr11:12096655             42.6               6202380         145647.4
+14:59:07.694 INFO  ProgressMeter -       chr11:19105011             42.8               6226180         145636.2
+14:59:15.910 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:17.696 INFO  ProgressMeter -       chr11:26410878             42.9               6251000         145648.9
+14:59:27.696 INFO  ProgressMeter -       chr11:33897887             43.1               6276410         145675.2
+14:59:37.701 INFO  ProgressMeter -       chr11:40823594             43.3               6299930         145657.4
+14:59:47.703 INFO  ProgressMeter -       chr11:47528141             43.4               6322750         145623.7
+14:59:48.529 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:52.719 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:52.719 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:52.719 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:52.720 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:52.720 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:52.720 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:52.720 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:52.720 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:52.720 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.012 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.013 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.013 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.013 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.013 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.013 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.014 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.014 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.014 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.014 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.014 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.014 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.015 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.015 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.015 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.167 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:53.167 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+14:59:57.705 INFO  ProgressMeter -       chr11:53402244             43.6               6342660         145523.6
+15:00:07.707 INFO  ProgressMeter -       chr11:59336789             43.8               6362720         145427.6
+15:00:08.678 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:00:08.678 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:00:17.708 INFO  ProgressMeter -       chr11:65736165             43.9               6384460         145370.7
+15:00:18.084 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:00:19.590 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:00:19.591 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:00:19.591 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:00:19.591 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:00:19.591 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:00:27.712 INFO  ProgressMeter -       chr11:72006559             44.1               6405810         145305.2
+15:00:37.716 INFO  ProgressMeter -       chr11:79364929             44.3               6430810         145322.7
+15:00:47.718 INFO  ProgressMeter -       chr11:86189830             44.4               6453970         145298.7
+15:00:49.900 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:00:57.718 INFO  ProgressMeter -       chr11:93277732             44.6               6478010         145294.7
+15:01:03.274 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:01:07.720 INFO  ProgressMeter -       chr11:99553695             44.8               6499320         145229.7
+15:01:11.484 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:01:17.722 INFO  ProgressMeter -      chr11:104985830             44.9               6517790         145101.9
+15:01:27.725 INFO  ProgressMeter -      chr11:110992621             45.1               6538170         145017.3
+15:01:35.510 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:01:37.726 INFO  ProgressMeter -      chr11:117496623             45.3               6560220         144970.5
+15:01:47.728 INFO  ProgressMeter -      chr11:123041473             45.4               6579080         144853.7
+15:01:57.728 INFO  ProgressMeter -      chr11:129525159             45.6               6601060         144806.2
+15:02:07.181 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:02:07.733 INFO  ProgressMeter -         chr12:993974             45.8               6623010         144758.2
+15:02:07.946 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:02:14.549 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:02:14.549 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:02:14.550 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:02:14.550 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:02:14.550 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:02:17.733 INFO  ProgressMeter -        chr12:7554085             45.9               6645320         144718.6
+15:02:27.734 INFO  ProgressMeter -       chr12:14914229             46.1               6670400         144739.4
+15:02:29.723 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:02:33.674 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:02:37.735 INFO  ProgressMeter -       chr12:22700526             46.3               6696880         144790.3
+15:02:47.738 INFO  ProgressMeter -       chr12:28917276             46.4               6718000         144725.3
+15:02:57.742 INFO  ProgressMeter -       chr12:34219441             46.6               6736060         144595.0
+15:03:07.742 INFO  ProgressMeter -       chr12:42386790             46.8               6763650         144669.6
+15:03:07.993 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:07.994 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:07.994 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:07.994 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:07.994 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:07.995 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:07.995 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:07.995 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:07.995 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:07.996 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:17.745 INFO  ProgressMeter -       chr12:49469883             46.9               6787700         144668.2
+15:03:27.746 INFO  ProgressMeter -       chr12:57424977             47.1               6814860         144732.9
+15:03:34.921 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:37.011 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:37.011 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:37.011 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:37.011 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:37.012 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:37.012 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:03:37.748 INFO  ProgressMeter -       chr12:64856438             47.3               6840050         144755.4
+15:03:47.747 INFO  ProgressMeter -       chr12:72511706             47.4               6866000         144793.9
+15:03:57.754 INFO  ProgressMeter -       chr12:79561524             47.6               6889940         144789.5
+15:04:07.755 INFO  ProgressMeter -       chr12:86836887             47.8               6914580         144800.1
+15:04:17.757 INFO  ProgressMeter -       chr12:95136905             47.9               6942720         144883.6
+15:04:27.758 INFO  ProgressMeter -      chr12:103023227             48.1               6969520         144938.7
+15:04:34.705 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:04:34.705 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:04:37.760 INFO  ProgressMeter -      chr12:110997291             48.3               6996630         144999.8
+15:04:47.762 INFO  ProgressMeter -      chr12:118582560             48.4               7022370         145032.2
+15:04:57.763 INFO  ProgressMeter -      chr12:126131641             48.6               7048110         145064.4
+15:05:07.767 INFO  ProgressMeter -      chr12:133482498             48.8               7073090         145080.7
+15:05:17.768 INFO  ProgressMeter -        chr13:9939901             48.9               7107470         145289.1
+15:05:27.768 INFO  ProgressMeter -       chr13:20169153             49.1               7141660         145492.4
+15:05:37.775 INFO  ProgressMeter -       chr13:27828449             49.3               7167810         145530.6
+15:05:42.731 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:05:52.204 INFO  ProgressMeter -       chr13:32890610             49.5               7185050         145171.8
+15:06:09.580 INFO  ProgressMeter -       chr13:32913093             49.8               7185140         144329.1
+15:06:20.750 INFO  ProgressMeter -       chr13:32938784             50.0               7185240         143793.4
+15:06:33.505 INFO  ProgressMeter -       chr13:32973783             50.2               7185370         143186.9
+15:06:43.505 INFO  ProgressMeter -       chr13:39647179             50.3               7207990         143162.2
+15:06:53.505 INFO  ProgressMeter -       chr13:47810375             50.5               7235810         143240.5
+15:07:03.507 INFO  ProgressMeter -       chr13:54633808             50.7               7258980         143226.6
+15:07:13.509 INFO  ProgressMeter -       chr13:61181355             50.8               7281130         143192.6
+15:07:17.886 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:07:17.886 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:07:17.887 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:07:23.509 INFO  ProgressMeter -       chr13:67745896             51.0               7303430         143161.9
+15:07:32.272 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:07:33.511 INFO  ProgressMeter -       chr13:73967868             51.2               7324530         143107.9
+15:07:43.513 INFO  ProgressMeter -       chr13:80588724             51.3               7347020         143081.3
+15:07:47.204 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:07:53.517 INFO  ProgressMeter -       chr13:88003771             51.5               7372150         143106.0
+15:07:58.098 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:08:03.519 INFO  ProgressMeter -       chr13:95808737             51.7               7398650         143157.2
+15:08:06.368 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:08:06.368 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:08:13.529 INFO  ProgressMeter -      chr13:103245190             51.8               7423920         143183.9
+15:08:23.529 INFO  ProgressMeter -      chr13:109881224             52.0               7446470         143158.7
+15:08:33.531 INFO  ProgressMeter -        chr14:1542901             52.2               7469580         143144.2
+15:08:43.531 INFO  ProgressMeter -       chr14:10299901             52.3               7498770         143246.1
+15:08:53.533 INFO  ProgressMeter -       chr14:20349136             52.5               7532370         143431.2
+15:08:55.627 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:08:55.627 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:08:55.627 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:09:03.538 INFO  ProgressMeter -       chr14:28487583             52.7               7560070         143503.0
+15:09:13.543 INFO  ProgressMeter -       chr14:34711716             52.8               7581200         143450.1
+15:09:15.838 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:09:15.838 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:09:23.545 INFO  ProgressMeter -       chr14:40665953             53.0               7601440         143380.7
+15:09:25.948 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:09:33.550 INFO  ProgressMeter -       chr14:48276663             53.2               7627160         143414.8
+15:09:43.551 INFO  ProgressMeter -       chr14:56322221             53.3               7654520         143479.6
+15:09:53.552 INFO  ProgressMeter -       chr14:65101512             53.5               7684270         143588.6
+15:10:03.553 INFO  ProgressMeter -       chr14:72241947             53.7               7708520         143594.5
+15:10:13.556 INFO  ProgressMeter -       chr14:80104083             53.8               7735340         143648.0
+15:10:18.848 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:10:23.561 INFO  ProgressMeter -       chr14:88557871             54.0               7763990         143734.9
+15:10:31.235 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:10:33.562 INFO  ProgressMeter -       chr14:95524072             54.2               7787650         143729.4
+15:10:34.353 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:10:36.294 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:10:43.565 INFO  ProgressMeter -      chr14:103932661             54.3               7816160         143813.1
+15:10:53.565 INFO  ProgressMeter -        chr15:6463801             54.5               7849320         143981.7
+15:11:03.566 INFO  ProgressMeter -       chr15:17038801             54.7               7884570         144187.4
+15:11:11.953 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:11:13.566 INFO  ProgressMeter -       chr15:25890739             54.8               7914360         144292.4
+15:11:23.567 INFO  ProgressMeter -       chr15:34327679             55.0               7942970         144375.3
+15:11:33.568 INFO  ProgressMeter -       chr15:42267412             55.2               7969960         144428.3
+15:11:43.574 INFO  ProgressMeter -       chr15:50241401             55.3               7997030         144482.2
+15:11:53.575 INFO  ProgressMeter -       chr15:57860422             55.5               8022940         144515.1
+15:12:03.576 INFO  ProgressMeter -       chr15:64694828             55.7               8046220         144500.6
+15:12:13.577 INFO  ProgressMeter -       chr15:70584800             55.8               8066320         144429.2
+15:12:21.699 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:12:21.700 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:12:21.700 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:12:21.700 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:12:21.700 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:12:23.577 INFO  ProgressMeter -       chr15:76841223             56.0               8087610         144379.6
+15:12:33.580 INFO  ProgressMeter -       chr15:83130024             56.2               8108950         144331.0
+15:12:43.583 INFO  ProgressMeter -       chr15:89590027             56.3               8130870         144293.0
+15:12:51.790 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:12:53.583 INFO  ProgressMeter -       chr15:95477601             56.5               8150950         144222.7
+15:13:03.586 INFO  ProgressMeter -      chr15:101884650             56.7               8172650         144181.4
+15:13:13.594 INFO  ProgressMeter -        chr16:5464094             56.8               8193500         144125.1
+15:13:23.597 INFO  ProgressMeter -       chr16:12224685             57.0               8216590         144108.6
+15:13:33.597 INFO  ProgressMeter -       chr16:20095481             57.2               8243350         144156.6
+15:13:37.779 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:43.597 INFO  ProgressMeter -       chr16:27166390             57.3               8267400         144157.0
+15:13:52.363 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:52.363 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:52.364 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:52.364 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:52.364 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:52.364 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:52.364 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:52.365 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:52.365 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:52.821 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:53.598 INFO  ProgressMeter -       chr16:33360935             57.5               8288500         144106.1
+15:13:55.108 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.109 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.634 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.696 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.819 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.820 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.820 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.820 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.821 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.821 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.822 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.822 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.836 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.836 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.836 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.837 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.837 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.837 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.837 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.925 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.925 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.925 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.925 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.926 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.926 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:55.926 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.950 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.950 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.950 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.951 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.951 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.951 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.965 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.965 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.965 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.965 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.966 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.966 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.966 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.966 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:13:57.967 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:14:03.600 INFO  ProgressMeter -       chr16:39921668             57.7               8310600         144072.8
+15:14:11.907 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:14:12.117 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:14:12.118 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:14:12.118 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:14:13.600 INFO  ProgressMeter -       chr16:46822774             57.9               8333820         144059.1
+15:14:23.600 INFO  ProgressMeter -       chr16:52958139             58.0               8354640         144004.1
+15:14:33.601 INFO  ProgressMeter -       chr16:59165936             58.2               8375740         143954.2
+15:14:43.601 INFO  ProgressMeter -       chr16:66884043             58.4               8401880         143991.0
+15:14:49.366 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:14:53.603 INFO  ProgressMeter -       chr16:75335682             58.5               8430660         144072.6
+15:15:03.076 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:03.605 INFO  ProgressMeter -       chr16:81559047             58.7               8451840         144024.3
+15:15:05.173 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:05.173 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:05.174 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:13.609 INFO  ProgressMeter -       chr16:87093239             58.9               8470720         143937.1
+15:15:23.609 INFO  ProgressMeter -        chr17:2639886             59.0               8490860         143871.8
+15:15:26.119 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:28.686 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:28.687 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:33.612 INFO  ProgressMeter -        chr17:8488890             59.2               8510840         143804.1
+15:15:43.612 INFO  ProgressMeter -       chr17:14546996             59.4               8531480         143748.1
+15:15:46.558 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:53.613 INFO  ProgressMeter -       chr17:20793158             59.5               8552750         143702.9
+15:15:54.281 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:54.281 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:54.701 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:54.701 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:55.464 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:55.464 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:57.523 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:15:57.523 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:16:01.811 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:16:03.613 INFO  ProgressMeter -       chr17:26181922             59.7               8570990         143607.2
+15:16:13.613 INFO  ProgressMeter -       chr17:32286428             59.9               8591790         143554.8
+15:16:23.618 INFO  ProgressMeter -       chr17:38293568             60.0               8612260         143497.0
+15:16:23.919 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:16:23.919 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:16:23.919 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:16:35.791 INFO  ProgressMeter -       chr17:41197237             60.2               8622180         143178.3
+15:16:46.661 INFO  ProgressMeter -       chr17:41224192             60.4               8622290         142750.7
+15:16:59.704 INFO  ProgressMeter -       chr17:41244398             60.6               8622370         142240.1
+15:17:11.068 INFO  ProgressMeter -       chr17:41249710             60.8               8622400         141797.6
+15:17:36.136 INFO  ProgressMeter -       chr17:41278715             61.2               8622520         140831.9
+15:17:46.138 INFO  ProgressMeter -       chr17:46331359             61.4               8639700         140729.3
+15:17:56.140 INFO  ProgressMeter -       chr17:54485159             61.6               8667390         140798.1
+15:17:58.912 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:05.243 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:06.140 INFO  ProgressMeter -       chr17:62792481             61.7               8695680         140876.2
+15:18:15.740 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:15.741 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:15.741 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:15.741 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:16.147 INFO  ProgressMeter -       chr17:71179432             61.9               8724230         140957.9
+15:18:22.371 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:25.441 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:26.149 INFO  ProgressMeter -       chr17:79476443             62.1               8752540         141035.4
+15:18:27.963 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:27.963 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:36.150 INFO  ProgressMeter -        chr18:6665835             62.2               8781050         141115.8
+15:18:45.306 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:45.306 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:46.158 INFO  ProgressMeter -       chr18:15178800             62.4               8810040         141203.2
+15:18:51.569 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:51.569 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:51.569 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:51.569 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:51.570 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:51.570 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:51.570 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:51.638 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:52.333 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:52.334 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:52.334 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:52.334 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:52.335 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:55.034 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:18:56.162 INFO  ProgressMeter -       chr18:21293432             62.6               8830630         141156.0
+15:19:06.163 INFO  ProgressMeter -       chr18:29806733             62.7               8859480         141240.8
+15:19:16.163 INFO  ProgressMeter -       chr18:38646153             62.9               8889390         141342.1
+15:19:26.166 INFO  ProgressMeter -       chr18:47000604             63.1               8917720         141417.7
+15:19:36.167 INFO  ProgressMeter -       chr18:55165753             63.2               8945470         141483.7
+15:19:42.455 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:19:46.168 INFO  ProgressMeter -       chr18:63976361             63.4               8975390         141583.7
+15:19:56.169 INFO  ProgressMeter -       chr18:72718047             63.6               9005000         141678.3
+15:19:59.216 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:05.146 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:05.146 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:06.169 INFO  ProgressMeter -        chr19:3283158             63.7               9034430         141769.6
+15:20:10.149 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:10.149 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:10.150 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:16.175 INFO  ProgressMeter -       chr19:11396306             63.9               9062240         141834.8
+15:20:20.488 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:26.176 INFO  ProgressMeter -       chr19:18636634             64.1               9087180         141855.0
+15:20:33.133 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:33.133 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:33.134 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:33.134 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:33.134 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:36.784 INFO  ProgressMeter -       chr19:27732907             64.2               9117950         141943.6
+15:20:38.073 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:38.073 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:38.074 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:20:46.784 INFO  ProgressMeter -       chr19:35293325             64.4               9143670         141975.7
+15:20:56.785 INFO  ProgressMeter -       chr19:43295634             64.6               9170960         142031.8
+15:20:58.414 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:06.547 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:06.786 INFO  ProgressMeter -       chr19:51177394             64.7               9197930         142082.7
+15:21:13.151 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:16.787 INFO  ProgressMeter -         chr20:384773             64.9               9226320         142155.3
+15:21:26.788 INFO  ProgressMeter -        chr20:8470911             65.1               9253870         142214.5
+15:21:36.788 INFO  ProgressMeter -       chr20:17364751             65.2               9284030         142313.5
+15:21:37.343 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:37.343 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:46.789 INFO  ProgressMeter -       chr20:25557724             65.4               9311860         142376.3
+15:21:47.063 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.179 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.180 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.180 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.180 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.180 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.180 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.181 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.181 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.181 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.181 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.181 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.992 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.992 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.992 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:47.993 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.037 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.037 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.037 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.038 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.038 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.038 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.038 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.038 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.038 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.039 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.039 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.080 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.080 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.081 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.081 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.081 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.081 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.081 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:48.082 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:51.360 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:51.361 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:51.361 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:55.099 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:21:56.789 INFO  ProgressMeter -       chr20:34044587             65.6               9340580         142452.4
+15:22:03.381 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:06.791 INFO  ProgressMeter -       chr20:42894283             65.7               9370630         142548.3
+15:22:07.634 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:07.635 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:07.635 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:16.791 INFO  ProgressMeter -       chr20:51456188             65.9               9399770         142629.9
+15:22:26.791 INFO  ProgressMeter -       chr20:59464502             66.1               9426980         142682.0
+15:22:36.875 INFO  ProgressMeter -        chr21:6036901             66.2               9459190         142806.2
+15:22:42.278 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:42.327 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:42.591 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:42.627 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:42.627 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:42.627 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:42.627 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:42.628 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:42.628 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:43.000 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:43.000 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:43.000 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:43.990 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:46.877 INFO  ProgressMeter -       chr21:14033677             66.4               9486200         142854.5
+15:22:47.501 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:47.501 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:22:56.878 INFO  ProgressMeter -       chr21:22046226             66.6               9513370         142904.9
+15:23:06.878 INFO  ProgressMeter -       chr21:29994712             66.7               9540370         142952.6
+15:23:16.878 INFO  ProgressMeter -       chr21:38253114             66.9               9568450         143016.2
+15:23:22.438 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:23:26.878 INFO  ProgressMeter -       chr21:46166012             67.1               9595360         143062.0
+15:23:36.878 INFO  ProgressMeter -        chr22:7545901             67.2               9627160         143180.4
+15:23:46.883 INFO  ProgressMeter -       chr22:17121962             67.4               9659130         143300.5
+15:23:47.207 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:23:56.884 INFO  ProgressMeter -       chr22:25601372             67.6               9687980         143373.9
+15:23:59.740 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:24:04.573 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:24:06.150 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:24:06.593 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:24:06.886 INFO  ProgressMeter -       chr22:33741160             67.7               9715700         143430.3
+15:24:08.368 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:24:08.368 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:24:08.368 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:24:16.886 INFO  ProgressMeter -       chr22:41680740             67.9               9742740         143476.5
+15:24:26.886 INFO  ProgressMeter -       chr22:50203080             68.1               9771780         143551.8
+15:24:36.887 INFO  ProgressMeter -         chrX:7991421             68.2               9802440         143650.5
+15:24:46.891 INFO  ProgressMeter -        chrX:16069681             68.4               9829800         143700.3
+15:24:56.892 INFO  ProgressMeter -        chrX:25025615             68.6               9860160         143793.7
+15:25:06.894 INFO  ProgressMeter -        chrX:34340766             68.7               9891590         143902.3
+15:25:16.896 INFO  ProgressMeter -        chrX:43371051             68.9               9922130         143997.4
+15:25:17.797 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:25:26.201 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:25:26.895 INFO  ProgressMeter -        chrX:52699720             69.1               9953620         144105.8
+15:25:36.932 INFO  ProgressMeter -        chrX:61569014             69.2               9983510         144189.4
+15:25:37.494 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:25:37.494 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:25:37.495 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:25:46.934 INFO  ProgressMeter -        chrX:70102183             69.4              10012390         144259.1
+15:25:56.936 INFO  ProgressMeter -        chrX:78753743             69.6              10041700         144334.8
+15:26:05.542 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:26:06.936 INFO  ProgressMeter -        chrX:87601356             69.7              10071550         144417.9
+15:26:16.942 INFO  ProgressMeter -        chrX:95950580             69.9              10099770         144477.0
+15:26:26.942 INFO  ProgressMeter -       chrX:103251629             70.1              10124410         144485.0
+15:26:36.946 INFO  ProgressMeter -       chrX:110706831             70.2              10149580         144500.4
+15:26:46.948 INFO  ProgressMeter -       chrX:118166477             70.4              10174830         144516.9
+15:26:56.947 INFO  ProgressMeter -       chrX:125853266             70.6              10200890         144544.9
+15:27:06.948 INFO  ProgressMeter -       chrX:134207461             70.7              10229120         144603.4
+15:27:07.322 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:16.950 INFO  ProgressMeter -       chrX:141885221             70.9              10255130         144630.3
+15:27:20.387 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:26.949 INFO  ProgressMeter -       chrX:150310945             71.1              10283640         144692.3
+15:27:36.951 INFO  ProgressMeter -         chrY:3890293             71.2              10313380         144771.1
+15:27:43.716 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:43.717 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:46.952 INFO  ProgressMeter -        chrY:13344246             71.4              10344940         144875.2
+15:27:47.151 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:47.152 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:47.152 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:47.175 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:47.175 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:47.390 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:47.526 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:47.906 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:47.906 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:27:56.953 INFO  ProgressMeter -        chrY:22917539             71.6              10376970         144985.3
+15:28:06.967 INFO  ProgressMeter -        chrY:32116986             71.7              10407640         145075.5
+15:28:16.967 INFO  ProgressMeter -        chrY:42640986             71.9              10442720         145227.1
+15:28:26.967 INFO  ProgressMeter -        chrY:51700986             72.1              10472920         145310.3
+15:28:34.855 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:28:34.911 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:28:34.911 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:28:34.912 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:28:34.912 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:28:34.912 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:28:36.968 INFO  ProgressMeter - chr4_gl000193_random:70308             72.2              10502990         145391.3
+15:28:46.969 INFO  ProgressMeter - chr6_cox_hap2:4339096             72.4              10533980         145484.6
+15:28:56.968 INFO  ProgressMeter - chr6_mcf_hap5:870287             72.6              10569390         145638.4
+15:29:06.970 INFO  ProgressMeter - chr6_ssto_hap7:2522101             72.7              10606390         145813.3
+15:29:08.243 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:10.290 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:10.290 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:10.290 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:10.291 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:10.291 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:11.347 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:11.348 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:12.071 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:12.071 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:12.072 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:12.072 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:12.777 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:14.605 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:15.032 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:17.422 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:17.424 INFO  ProgressMeter - chrUn_gl000212:41004             72.9              10625710         145729.9
+15:29:18.528 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.585 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.585 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.807 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.808 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.808 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.809 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.809 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.809 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.809 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.905 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.906 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.906 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.906 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.906 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.907 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.907 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.907 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.907 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:18.908 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:19.486 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:19.518 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:19.519 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:20.265 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:20.443 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.071 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.072 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.072 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.072 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.072 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.072 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.073 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.073 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.741 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.741 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.741 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.742 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.742 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.742 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.742 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.743 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.743 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.743 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:23.743 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.279 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.279 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.279 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.279 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.280 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.322 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.323 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.393 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.394 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.394 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.394 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.394 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.560 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.560 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:24.560 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.263 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.263 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.264 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.264 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.264 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.264 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.921 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.921 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.922 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.922 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.922 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.922 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:26.922 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:27.214 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:27.214 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:27.214 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:27.214 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:27.215 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:27.427 INFO  ProgressMeter - chrUn_gl000235:13247             73.1              10636040         145538.8
+15:29:27.801 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:27.801 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:28.407 WARN  StrandBiasBySample - Annotation will not be calculated, genotype is not called or alleleLikelihoodMap is null
+15:29:28.798 INFO  HaplotypeCaller - 74888 read(s) filtered by: MappingQualityReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+383529 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+458417 total reads filtered
+15:29:28.798 INFO  ProgressMeter - chrUn_gl000249:36001             73.1              10638048         145520.7
+15:29:28.798 INFO  ProgressMeter - Traversal complete. Processed 10638048 total regions in 73.1 minutes.
+15:29:29.016 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.26234451400000003
+15:29:29.016 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 87.733358521
+15:29:29.016 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 62.88 sec
+15:29:29.017 INFO  HaplotypeCaller - Shutting down engine
+[September 10, 2020 3:29:29 PM KST] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 73.25 minutes.
+Runtime.totalMemory()=3860856832
+Using GATK jar /home/ehlim/tools/miniconda3/envs/gatk/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /home/ehlim/tools/miniconda3/envs/gatk/share/gatk4-4.1.8.1-0/gatk-package-4.1.8.1-local.jar HaplotypeCaller -R /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references/hg19/ucsc.hg19.fasta -I results/recal/BRCA_NA12892.bam -O results/called/BRCA_NA12892.g.vcf.gz -ERC GVCF

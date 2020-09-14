@@ -98,7 +98,7 @@ rule sortsam:
     output:
         "results/dedup/{sample}.sortsam.bam"
     log:
-         "logs/gatk/sortsam/{sample}.log"
+        "logs/gatk/sortsam/{sample}.log"
     shell:
        "gatk SortSam -I {input} -O {output} -SO coordinate 2> {log}"
 
@@ -120,7 +120,7 @@ rule recalibrate_base_qualities:
 
 
 rule apply_bqsr:
-    input:
+    apply_bqsr
         bam="results/dedup/{sample}.sortsam.bam",
         ref=ref_dir+ref_filename,
         recal_table="results/recal/{sample}.recal.table"

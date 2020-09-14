@@ -1,0 +1,4 @@
+Building DAG of jobs...
+MissingInputException in line 7 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile:
+Missing input files for rule all:
+results/recal/BRCA_NA12892.bam.bairesults/called/BRCA_NA12892.g.vcf.gz

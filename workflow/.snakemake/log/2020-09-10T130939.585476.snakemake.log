@@ -1,0 +1,5 @@
+NameError in line 47 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.smk:
+name 'wildcards' is not defined
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile", line 21, in <module>
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/calling.smk", line 4, in <module>
+  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.smk", line 47, in get_sample_bams

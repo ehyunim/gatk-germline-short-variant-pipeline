@@ -11,6 +11,8 @@ knowndb:
 
 
 readingtype: "paired" #paired(default) or single 
+
+jointcalling: true 
     
 
 filtering:
@@ -37,7 +39,8 @@ params:
     bwa:
         readgroup: "-RGID inco -RGSM BRCA_NA12892 -RGLB BRCA_NA12892 -RGPU illumina  -RGPL illumina"
     gatk:
-        HaplotypeCaller: ""
+        HaplotypeCaller: "-ERC GVCF"
+        GenomicsDBimport: "-merge-input-intervals true"
         BaseRecalibrator: ""
         GenotypeGVCFs: ""
         VariantRecalibrator: ""

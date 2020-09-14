@@ -1,16 +1,21 @@
 include: "rules/common.smk"
 
+
 ##### Target rules #####
 # a target rule to define the desired final output
+
 rule all:
     input:
         #'results/trimmed/BRCA_NA12892.fastq.gz',
         #'results/trimmed/BRCA_NA12892.2.unpaired.fastq.gz'
         #'results/mapped/BRCA_NA12892.bam'
-        #"sorted_reads/BRCA_NA12892.bam"
         #"results/dedup/BRCA_NA12892.dedup.bam"
         #"results/dedup/BRCA_NA12892.sortsam.bam"
-        "results/recal/BRCA_NA12892.bam.bai"
+        #"results/recal/BRCA_NA12892.bam.bai",
+        #'results/called/BRCA_NA12892.g.vcf.gz'
+        "results/genotyped/all.BRCA_NA12892.vcf.gz"
+
 ##### Modules #####
 
-include: "rules/mapping.smk"
+#include: "rules/mapping.smk"
+include: "rules/calling.smk"

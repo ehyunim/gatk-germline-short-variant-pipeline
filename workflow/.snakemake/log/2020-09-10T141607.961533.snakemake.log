@@ -1,0 +1,31 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	call_variants
+	2
+
+[Thu Sep 10 14:16:08 2020]
+rule call_variants:
+    input: /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references/hg19/ucsc.hg19.fasta, results/recal/BRCA_NA12892.bam
+    output: results/called/BRCA_NA12892.g.vcf.gz
+    log: logs/gatk/haplotypecaller/BRCA_NA12892.log
+    jobid: 1
+    wildcards: sample=BRCA_NA12892
+
+[Thu Sep 10 15:29:29 2020]
+Finished job 1.
+1 of 2 steps (50%) done
+
+[Thu Sep 10 15:29:29 2020]
+localrule all:
+    input: results/called/BRCA_NA12892.g.vcf.gz
+    jobid: 0
+
+[Thu Sep 10 15:29:29 2020]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/.snakemake/log/2020-09-10T141607.961533.snakemake.log

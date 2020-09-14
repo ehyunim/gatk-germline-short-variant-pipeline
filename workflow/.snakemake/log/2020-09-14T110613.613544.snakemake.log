@@ -1,0 +1,5 @@
+Building DAG of jobs...
+MissingInputException in line 16 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/calling.smk:
+Missing input files for rule combine_calls:
+-V /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/results/called/BRCA_NA12892.g.vcf.gz
+-V /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/results/called/BRCA_NA12892_test.g.vcf.gz
