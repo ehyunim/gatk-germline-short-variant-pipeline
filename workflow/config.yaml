@@ -12,8 +12,6 @@ knowndb:
 
 readingtype: "paired" #paired(default) or single 
 
-jointcalling: true 
-    
 
 filtering:
     vqsr: false
