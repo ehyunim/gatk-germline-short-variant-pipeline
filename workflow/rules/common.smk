@@ -55,9 +55,33 @@ def get_gvcf_list(wildcards):
     return(gvcfs)
 
 
+def get_hardfilter(wildcards):
+    if config["vartype"]=="snvs":
+        return {
+                "snv-hard-filter":
+                config["filtering"]["hard"]["snvs"]}
+    else:
+        return config["filtering"]["hard"]["indels"]
+
+
+def select_filteroption(wildcards):
+    if config["filteroption"]=="vqsr":
+        return expand("results/filtered/all.{sample}.recal.vcf.gz", sample=wildcards.sample)
+    elif config["filteroption"]=="cnn":
+        return expand("results/filtered/all.{sample}.cnn.vcf.gz", sample=wildcards.sample)
+    elif config["filteroption"]=="hard":
+        return expand("results/filtered/all.{sample}.hardfiltered.vcf.gz", sample=wildcards.sample)
+
+
+def select_annotation(wildcards):
+    annotation_list=config["params"]["gatk"]["VariantRecalibrator"]["annotation"]
+    annotations="-an " +" -an ".join(annotation_list)
+    return annotations
+
+
 def main():
     get_trimmed_reads()
-   # print(get_gvcf_list())
+
 
 if __name__ == "__main__" :
     main()

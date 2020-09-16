@@ -100,7 +100,7 @@ rule sortsam:
     log:
         "logs/gatk/sortsam/{sample}.log"
     shell:
-       "gatk SortSam -I {input} -O {output} -SO coordinate 2> {log}"
+        "gatk SortSam -I {input} -O {output} -SO coordinate 2> {log}"
 
 
 rule recalibrate_base_qualities:
