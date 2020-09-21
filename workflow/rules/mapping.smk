@@ -39,6 +39,7 @@ rule trim_reads_pe:
         ILLUMINACLIP:{adapter_seq}:2:30:10 {params.pm} \
         2> {log}"
 
+
 rule map_reads:
     input:
         ref=ref_dir+ref_filename,
@@ -92,6 +93,7 @@ rule mark_duplicates:
     shell:
         "gatk MarkDuplicates -I {input} -O {output.bam} -M {output.metrics} 2> {log}"
 
+
 rule sortsam:
     input:
         "results/dedup/{sample}.dedup.bam"
@@ -120,7 +122,7 @@ rule recalibrate_base_qualities:
 
 
 rule apply_bqsr:
-    apply_bqsr
+    input:
         bam="results/dedup/{sample}.sortsam.bam",
         ref=ref_dir+ref_filename,
         recal_table="results/recal/{sample}.recal.table"

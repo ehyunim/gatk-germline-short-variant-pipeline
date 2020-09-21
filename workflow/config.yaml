@@ -13,22 +13,19 @@ knowndb:
 readingtype: "paired" # either paired(default) or single 
 
 
-vartype: "snvs" # either snvs or indels
-
-
-filteroption: "vqsr" # either vqsr, hard, or cnn
+filteroption: "hard" # either vqsr or hard
 
 
 filtering:
-    vqsr: 
+    vqsr:  
         resources: # resources path 
-            hapmap: "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/standardDB/ALL.wgs.phase3_shapeit2_mvncall_integrated_v5b.20130502.sites.vcf"
+            hapmap: "/tier4/DSC/GATK/DB/HapMap/hapmp_phase3_ensembl_v99_hg19_CHB_JPT.vcf" #CHB+JPT
             omni: "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/standardDB/1000G_omni2.5.hg19.sites.vcf" 
             g1k: "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/standardDB/1000G_phase1.snps.high_confidence.hg19.sites.vcf"
             dbsnp: "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/standardDB/dbsnp_138.hg19.vcf"
+            g1k_indel: ""
             
-    cnn: false
-    hard:
+    hard:  
         snvs:
             "QD < 2.0 || FS > 60.0 || MQ < 40.0 || MQRankSum < -12.5 || ReadPosRankSum < -8.0"
         indels:
@@ -55,7 +52,7 @@ params:
         GenotypeGVCFs: ""
         VariantRecalibrator:
                 mode: "SNP"
-                annotation: ["QD", "FisherStrand"] # which fields to use with -an
+                annotation: ["QD"] # which fields to use with -an
                 extra: ""
         MarkDuplicates: "REMOVE_DUPLICATES false"
 

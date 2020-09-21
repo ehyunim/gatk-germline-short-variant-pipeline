@@ -14,13 +14,13 @@ rule all:
         #"results/recal/BRCA_NA12892.bam.bai",
         #'results/called/BRCA_NA12892.g.vcf.gz'
         #"results/called/all.BRCA_NA12892.g.vcf.gz"
-        "results/filtered/all.BRCA_NA12892.recal.vcf.gz"
-        #"results/filtered/all.BRCA_NA12892.hardfiltered.vcf.gz"
-        #"results/filtered/all.BRCA_NA12892.cnn.vcf.gz"
-
-
+        #"results/filtered/all.BRCA_NA12892.recal.vcf.gz"
+        #"results/genotyped/all.vcf.gz"
+        #"results/filtered/all.snvs.hardfiltered.vcf.gz",
+        #"results/filtered/all.indels.hardfiltered.vcf.gz"
+        "results/filtered/all.vcf.gz"
 ##### Modules #####
 
-#include: "rules/mapping.smk"
+include: "rules/mapping.smk"
 include: "rules/calling.smk"
 include: "rules/filtering.smk"

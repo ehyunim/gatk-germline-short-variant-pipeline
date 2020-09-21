@@ -55,22 +55,14 @@ def get_gvcf_list(wildcards):
     return(gvcfs)
 
 
+def get_vartype(wildcards):
+    return "--select-type-to-include {}".format(
+            "SNP" if wildcards.vartype == "snvs" else "INDEL")
+
+
 def get_hardfilter(wildcards):
-    if config["vartype"]=="snvs":
-        return {
-                "snv-hard-filter":
-                config["filtering"]["hard"]["snvs"]}
-    else:
-        return config["filtering"]["hard"]["indels"]
-
-
-def select_filteroption(wildcards):
-    if config["filteroption"]=="vqsr":
-        return expand("results/filtered/all.{sample}.recal.vcf.gz", sample=wildcards.sample)
-    elif config["filteroption"]=="cnn":
-        return expand("results/filtered/all.{sample}.cnn.vcf.gz", sample=wildcards.sample)
-    elif config["filteroption"]=="hard":
-        return expand("results/filtered/all.{sample}.hardfiltered.vcf.gz", sample=wildcards.sample)
+    return {"snv-hard-filter":
+            config["filtering"]["hard"][wildcards.vartype]}#"snvs" or "indels"
 
 
 def select_annotation(wildcards):
