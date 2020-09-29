@@ -4,8 +4,12 @@ samples:
 
 ref:
     path: "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/references/hg19/"
+    species: homo_sapiens
+    release: 101
+    build: GRCh37.p13
+    version: "hg19"
 
-
+    
 knowndb:
     dbSNP: "/tier4/DSC/GATK/jgjeong/standardDB/vcfDB/dbsnp_138.hg19.vcf"
 
@@ -55,7 +59,8 @@ params:
                 annotation: ["QD"] # which fields to use with -an
                 extra: ""
         MarkDuplicates: "REMOVE_DUPLICATES false"
-
+        Funcotator:
+            path: ["../resources/Funcotator/funcotator_dataSources.v1.6.20190124g/"]
     trimmomatic:
         trimmer:
             - "LEADING:3"
@@ -63,3 +68,7 @@ params:
             - "SLIDINGWINDOW:4:15"
             - "MINLEN:36"
         adapter: "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/resources/adapters/TruSeq3-PE.fa" 
+    vep:
+        plugins:
+            - LoFtool
+        extra: ""

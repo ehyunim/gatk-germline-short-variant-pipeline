@@ -1,4 +1,3 @@
-expand("results/genotyped/vartype/all.{vartype}.vcf.gz", vartype=["snvs","indels"])
 rule select_variant:
     input:
         ref=ref_dir+ref_filename,

@@ -18,9 +18,16 @@ rule all:
         #"results/genotyped/all.vcf.gz"
         #"results/filtered/all.snvs.hardfiltered.vcf.gz",
         #"results/filtered/all.indels.hardfiltered.vcf.gz"
-        "results/filtered/all.vcf.gz"
+        #"results/filtered/all.vcf.gz"
+        #"../resources/vep/plugins"
+        #"../resources/vep/tmp/cache"
+        #"results/annotated/all.vcf.gz"
+        #"results/annotated/vep/all.vcf.gz"
+        "results/annotated/funcotator/all.vcf.gz"
 ##### Modules #####
 
 include: "rules/mapping.smk"
 include: "rules/calling.smk"
 include: "rules/filtering.smk"
+include: "rules/ref.smk"
+include: "rules/annotation.smk"

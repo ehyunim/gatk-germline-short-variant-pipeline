@@ -28,9 +28,9 @@ ref_filename=''.join([file for file in ref_list if file.endswith(".fasta")])
 def get_trimmed_reads():
     """Get trimmed reads based on given readingtype""" 
     if str(config["readingtype"]) == "paired":
-        return expand('results/trimmed/{sample}.2.unpaired.fastq.gz', sample=sample)
+        return expand('results/trimmed/{sample}.2.unpaired.fastq.gz', sample=BRCA_NA12892)
     else:
-        return expand('results/trimmed/{sample}.unpaired.fastq.gz', sample=sample)
+        return expand('results/trimmed/{sample}.unpaired.fastq.gz', sample=BRCA_NA12892)
 
 
 def get_sample_readingtype():
