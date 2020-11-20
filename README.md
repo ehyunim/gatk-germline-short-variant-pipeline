@@ -42,7 +42,7 @@ $ conda install gatk4 bwa samtools trimmomatic gatktool fastqc multiqc
 * Otherwise, Simply run:
 
 ```
-conda env create -f isgrna/gatk_germline_pipeline/workflow/envs/environment.yml 
+conda env create -f ~/workflow/envs/environment.yml 
 
 ```
 * Make sure you need to type your Miniconda path in the prefix on the bottom of the .yml file 
