@@ -1,4 +1,0 @@
-TypeError in line 4 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/calling.smk:
-get_sample_bams() missing 1 required positional argument: 'wildcards'
-  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile", line 21, in <module>
-  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/calling.smk", line 4, in <module>

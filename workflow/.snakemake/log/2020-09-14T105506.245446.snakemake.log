@@ -1,6 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 16 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/calling.smk:
-Missing input files for rule combine_calls:
--V /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/results/called/test1.g.vcf.gz
--V /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/results/called/test3.g.vcf.gz
--V /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/results/called/test2.g.vcf.gz

@@ -1,4 +1,0 @@
-Building DAG of jobs...
-MissingInputException in line 44 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk:
-Missing input files for rule map_reads:
-ucsc.hg19.fasta

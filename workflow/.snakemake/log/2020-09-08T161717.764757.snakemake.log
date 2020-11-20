@@ -1,4 +1,0 @@
-KeyError in line 94 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk:
-'knwondb'
-  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile", line 15, in <module>
-  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk", line 94, in <module>

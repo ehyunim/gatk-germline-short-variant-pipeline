@@ -1,4 +1,0 @@
-KeyError in line 20 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.smk:
-'adapter'
-  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile", line 1, in <module>
-  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/common.smk", line 20, in <module>

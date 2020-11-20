@@ -8,7 +8,7 @@ rule trim_reads_se:
         pm=config["params"]["trimmomatic"]["trimmer"]
     threads:8
     log:
-        "logs/trimmomatic/{sample}.log"
+        "results/logs/trimmomatic/{sample}.log"
     shell:
         "trimmomatic SE -threads {threads} -phred33 \
         {input.r1} \
@@ -30,7 +30,7 @@ rule trim_reads_pe:
         pm=config["params"]["trimmomatic"]["trimmer"]
     threads:8
     log:
-        "logs/trimmomatic/{sample}.log"
+        "results/logs/trimmomatic/{sample}.log"
     shell:
         "trimmomatic PE -threads {threads} -phred33 \
         {input.r1} {input.r2} \
@@ -44,12 +44,11 @@ rule map_reads:
     input:
         ref=ref_dir+ref_filename,
         **get_sample_readingtype()
-
     output:
-        "results/mapped/{sample}.bam"
+        temp("results/mapped/{sample}.bam")
     threads:8
     log:
-        "logs/bwa_mem/{sample}.log"
+        "results/logs/bwa_mem/{sample}.log"
     shell:
         "(bwa mem -t {threads} {input} | "
         "samtools view -Sb - > {output}) 2> {log}"
@@ -63,7 +62,7 @@ rule add_readgroups:
     params:
         rg=config["params"]["bwa"]["readgroup"]
     log:
-        "logs/bwa_mem/rg/{sample}.log"
+        "results/logs/bwa_mem/rg/{sample}.log"
     shell:
         "gatk AddOrReplaceReadGroups -I {input} -O {output} {params.rg} 2> {log}"
 
@@ -74,7 +73,7 @@ rule sort_bam:
     output:
         "results/sorted/{sample}.sorted.bam"
     log:
-        "logs/samtools/sort/{sample}.log"
+        "results/logs/samtools/sort/{sample}.log"
     shell:
         "samtools sort results/mapped/{wildcards.sample}_rg.bam"
         " -o {output} 2> {log}"
@@ -85,11 +84,11 @@ rule mark_duplicates:
         "results/sorted/{sample}.sorted.bam"
     output:
         bam="results/dedup/{sample}.dedup.bam",
-        metrics="results/dedup/{sample}.metrics.txt"
+        metrics="results/qc/dedup/{sample}.metrics.txt"
     params:
         config["params"]["gatk"]["MarkDuplicates"]
     log:
-        "logs/picard/dedup/{sample}.log"
+        "results/logs/picard/dedup/{sample}.log"
     shell:
         "gatk MarkDuplicates -I {input} -O {output.bam} -M {output.metrics} 2> {log}"
 
@@ -100,7 +99,7 @@ rule sortsam:
     output:
         "results/dedup/{sample}.sortsam.bam"
     log:
-        "logs/gatk/sortsam/{sample}.log"
+        "results/logs/gatk/sortsam/{sample}.log"
     shell:
         "gatk SortSam -I {input} -O {output} -SO coordinate 2> {log}"
 
@@ -115,7 +114,7 @@ rule recalibrate_base_qualities:
     params:
         config["params"]["gatk"]["BaseRecalibrator"]
     log:
-        "logs/gatk/bqsr/{sample}.log"
+        "results/logs/gatk/bqsr/{sample}.log"
     shell:
         "gatk BaseRecalibrator -I {input.bam} -R {input.ref} --known-sites {input.known} "
         "{params} -O {output.recal_table}"
@@ -129,7 +128,7 @@ rule apply_bqsr:
     output:
         final_bam=protected("results/recal/{sample}.bam")
     log:
-        "logs/gatk/bqsr/applybqsr/{sample}.log"
+        "results/logs/gatk/bqsr/applybqsr/{sample}.log"
     shell:
         "gatk ApplyBQSR -I {input.bam} -R {input.ref} --bqsr-recal-file {input.recal_table} "
         "-O {output.final_bam} 2> {log}"
@@ -142,20 +141,6 @@ rule index_bam:
         "results/recal/{sample}.bam.bai"
     shell:
         "samtools index {input}"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

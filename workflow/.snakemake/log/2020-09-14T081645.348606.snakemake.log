@@ -1,4 +1,0 @@
-SyntaxError:
-Not all output, log and benchmark files of rule combine_calls contain the same wildcards. This is crucial though, in order to avoid that two or more jobs write to the same file.
-  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile", line 21, in <module>
-  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/calling.smk", line 25, in <module>

@@ -1,33 +1,24 @@
 include: "rules/common.smk"
 
-
 ##### Target rules #####
 # a target rule to define the desired final output
 
 rule all:
     input:
-        #'results/trimmed/BRCA_NA12892.fastq.gz',
-        #'results/trimmed/BRCA_NA12892.2.unpaired.fastq.gz'
-        #'results/mapped/BRCA_NA12892.bam'
-        #"results/dedup/BRCA_NA12892.dedup.bam"
-        #"results/dedup/BRCA_NA12892.sortsam.bam"
-        #"results/recal/BRCA_NA12892.bam.bai",
-        #'results/called/BRCA_NA12892.g.vcf.gz'
-        #"results/called/all.BRCA_NA12892.g.vcf.gz"
-        #"results/filtered/all.BRCA_NA12892.recal.vcf.gz"
-        #"results/genotyped/all.vcf.gz"
-        #"results/filtered/all.snvs.hardfiltered.vcf.gz",
-        #"results/filtered/all.indels.hardfiltered.vcf.gz"
-        #"results/filtered/all.vcf.gz"
-        #"../resources/vep/plugins"
-        #"../resources/vep/tmp/cache"
-        #"results/annotated/all.vcf.gz"
-        #"results/annotated/vep/all.vcf.gz"
-        "results/annotated/funcotator/all.vcf.gz"
+        "results/qc/multiqc.html",
+        "results/annotated/funcotator/all.vcf.gz",
+        "results/plots/depths.svg",
+        "results/plots/allele-freqs.svg"
+
+
 ##### Modules #####
 
 include: "rules/mapping.smk"
 include: "rules/calling.smk"
 include: "rules/filtering.smk"
-include: "rules/ref.smk"
+include: "rules/stats.smk"
+include: "rules/qc.smk"
 include: "rules/annotation.smk"
+
+##### Addiional Modules #####
+#include: "rules/eval.smk"

@@ -1,5 +1,0 @@
-Building DAG of jobs...
-File path ' -V /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/results/called/BRCA_NA12892_test.g.vcf.gz' starts with whitespace. This is likely unintended. It can also lead to inconsistent results of the file-matching approach used by Snakemake.
-MissingInputException in line 1 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/calling.smk:
-Missing input files for rule call_variants:
-results/recal/all.BRCA_NA12892.bam

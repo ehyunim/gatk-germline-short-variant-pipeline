@@ -1,4 +1,0 @@
-TokenError in line 1 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile:
-('EOF in multi-line statement', (41, 0))
-  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile", line 1, in <module>
-  File "/home/ehlim/tools/miniconda3/envs/gatk/lib/python3.6/tokenize.py", line 602, in _tokenize

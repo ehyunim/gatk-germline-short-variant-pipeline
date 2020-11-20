@@ -1,4 +1,0 @@
-TypeError in line 45 of /tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk:
-get_sample_readingtype() missing 1 required positional argument: 'wildcards'
-  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/Snakefile", line 20, in <module>
-  File "/tier4/DSC/GATK/ehlim/gatk_germline_pipeline/workflow/rules/mapping.smk", line 45, in <module>

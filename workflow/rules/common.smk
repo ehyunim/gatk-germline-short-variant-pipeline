@@ -16,23 +16,17 @@ configfile: "config.yaml"
 
 ##### Variables #####
 sample_dir=config["samples"]["path"]
-
+sample_list=os.listdir(sample_dir)
+SAMPLES=[sample.split("_R")[0] for sample in sample_list if sample.endswith(".fastq.gz")]
+#SAMPLES=["BRCA_NA12892"]
 adapter_seq=config["params"]["trimmomatic"]["adapter"]
-
 ref_dir=config["ref"]["path"]
 ref_list=os.listdir(ref_dir)
 ref_filename=''.join([file for file in ref_list if file.endswith(".fasta")])
+bed_file=config["params"]["gatk"]["CollectHsMetrics"]["bedfile"]
 
 
 ##### Helper functions #####
-def get_trimmed_reads():
-    """Get trimmed reads based on given readingtype""" 
-    if str(config["readingtype"]) == "paired":
-        return expand('results/trimmed/{sample}.2.unpaired.fastq.gz', sample=BRCA_NA12892)
-    else:
-        return expand('results/trimmed/{sample}.unpaired.fastq.gz', sample=BRCA_NA12892)
-
-
 def get_sample_readingtype():
     """select samples based on given readingtype""" 
     if str(config["readingtype"]) == "paired":
@@ -43,6 +37,7 @@ def get_sample_readingtype():
 
 def get_sample_bams(wildcards):
     return expand("results/recal/{sample}.bam", sample=wildcards.sample)
+
 
 
 def get_gvcf_list(wildcards):
@@ -60,6 +55,11 @@ def get_vartype(wildcards):
             "SNP" if wildcards.vartype == "snvs" else "INDEL")
 
 
+def get_vqsr_mode(wildcards):
+    return  "--mode {}".format(
+            "SNP" if wildcards.vartype == "snvs" else "INDEL")
+
+
 def get_hardfilter(wildcards):
     return {"snv-hard-filter":
             config["filtering"]["hard"][wildcards.vartype]}#"snvs" or "indels"
@@ -70,10 +70,3 @@ def select_annotation(wildcards):
     annotations="-an " +" -an ".join(annotation_list)
     return annotations
 
-
-def main():
-    get_trimmed_reads()
-
-
-if __name__ == "__main__" :
-    main()
